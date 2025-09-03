@@ -80,15 +80,15 @@ export default function Home() {
       {/* Main Content */}
       <div id="content">
         {/* Audience Navigator Section */}
-        <section id="solutions" className="py-20 bg-white">
+        <section id="solutions" className="py-32 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
+            <div className="text-center mb-20">
               <motion.h2
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+                className="text-4xl lg:text-5xl font-heading font-bold text-gray-900 mb-8"
               >
                 Find Your Solution
               </motion.h2>
@@ -97,13 +97,13 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="text-xl text-gray-600 max-w-3xl mx-auto"
+                className="text-2xl text-gray-600 max-w-4xl mx-auto"
               >
                 Whether you&apos;re a distributor, facility manager, or researcher, we have the right odor control solution for your needs.
               </motion.p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -156,15 +156,15 @@ export default function Home() {
         <TrustBar />
 
         {/* Product Family Showcase */}
-        <section className="py-20 bg-white">
+        <section className="py-32 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
+            <div className="text-center mb-20">
               <motion.h2
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+                className="text-4xl lg:text-5xl font-heading font-bold text-gray-900 mb-8"
               >
                 Our Product Families
               </motion.h2>
@@ -173,13 +173,13 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="text-xl text-gray-600 max-w-3xl mx-auto"
+                className="text-2xl text-gray-600 max-w-4xl mx-auto"
               >
                 Six specialized product families, each engineered for specific applications and odor control challenges.
               </motion.p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {productFamilies.map((family, index) => (
                 <motion.div
                   key={family.name}
@@ -204,7 +204,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
               viewport={{ once: true }}
-              className="text-center mt-12"
+              className="text-center mt-16"
             >
               <CTAButton variant="primary" size="large" href="/products">
                 View All Products
@@ -214,15 +214,15 @@ export default function Home() {
         </section>
 
         {/* Global Footprint Section */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-32 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
+            <div className="text-center mb-20">
               <motion.h2
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+                className="text-4xl lg:text-5xl font-heading font-bold text-gray-900 mb-8"
               >
                 Global Footprint
               </motion.h2>
@@ -231,7 +231,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="text-xl text-gray-600 max-w-3xl mx-auto mb-8"
+                className="text-2xl text-gray-600 max-w-4xl mx-auto mb-8"
               >
                 Serving customers in 50+ countries with local support and global expertise.
               </motion.p>
@@ -242,7 +242,7 @@ export default function Home() {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="bg-white rounded-2xl shadow-lg p-8 mb-12"
+              className="bg-white rounded-2xl shadow-xl p-12 mb-16"
             >
               <ComposableMap
                 projection="geoMercator"
@@ -286,7 +286,7 @@ export default function Home() {
             </motion.div>
 
             {/* Regional Stats */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
               {[
                 { region: "North America", countries: 2, highlight: true },
                 { region: "APAC", countries: 15, highlight: false },
@@ -299,7 +299,7 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className={`bg-white rounded-xl p-6 shadow-lg ${
+                  className={`bg-white rounded-xl p-8 shadow-xl ${
                     region.highlight ? 'ring-2 ring-primary' : ''
                   }`}
                 >
@@ -314,15 +314,15 @@ export default function Home() {
         </section>
 
         {/* Featured Case Study */}
-        <section className="py-20 bg-white">
+        <section className="py-32 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
+            <div className="text-center mb-20">
               <motion.h2
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+                className="text-4xl lg:text-5xl font-heading font-bold text-gray-900 mb-8"
               >
                 Success Stories
               </motion.h2>
@@ -331,7 +331,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="text-xl text-gray-600 max-w-3xl mx-auto"
+                className="text-2xl text-gray-600 max-w-4xl mx-auto"
               >
                 Real results from facilities worldwide who chose Ecolo for their odor control challenges.
               </motion.p>
@@ -362,7 +362,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
-              className="text-center mt-12"
+              className="text-center mt-16"
             >
               <CTAButton variant="ghost" size="large" href="/case-studies">
                 View All Case Studies
@@ -372,14 +372,14 @@ export default function Home() {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-20 bg-gradient-to-br from-primary to-primary-dark">
+        <section className="py-32 bg-gradient-to-br from-primary to-primary-dark">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-heading font-bold text-white mb-6"
+              className="text-4xl lg:text-5xl font-heading font-bold text-white mb-8"
             >
               Ready to Eliminate Odor?
             </motion.h2>
@@ -388,7 +388,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="text-xl text-blue-100 max-w-3xl mx-auto mb-8"
+              className="text-2xl text-blue-100 max-w-4xl mx-auto mb-10"
             >
               Contact our experts today for a free consultation and discover how our proven solutions can solve your odor control challenges.
             </motion.p>
@@ -398,7 +398,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+              className="flex flex-col sm:flex-row gap-6 justify-center items-center"
             >
               <CTAButton variant="accent" size="large" href="/contact">
                 Contact Our Experts

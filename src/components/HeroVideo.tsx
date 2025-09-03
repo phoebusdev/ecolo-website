@@ -69,12 +69,12 @@ const HeroVideo: React.FC<HeroVideoProps> = ({
       <div className="absolute inset-0 bg-gradient-dark"></div>
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto pt-16">
+      <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto pt-20">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight"
+          className="text-5xl sm:text-6xl lg:text-7xl font-heading font-bold mb-8 leading-tight"
         >
           {headline}
         </motion.h1>
@@ -83,7 +83,7 @@ const HeroVideo: React.FC<HeroVideoProps> = ({
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-xl sm:text-2xl font-light mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed"
+          className="text-2xl sm:text-3xl font-light mb-12 text-gray-200 max-w-4xl mx-auto leading-relaxed"
         >
           {subheadline}
         </motion.p>
@@ -93,7 +93,7 @@ const HeroVideo: React.FC<HeroVideoProps> = ({
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-6 justify-center items-center"
           >
             <CTAButton
               variant="primary"
@@ -119,27 +119,27 @@ const HeroVideo: React.FC<HeroVideoProps> = ({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-12 pt-8 border-t border-white/20"
+          className="mt-16 pt-10 border-t border-white/20"
         >
-          <p className="text-sm text-gray-300 mb-4">Trusted by facilities worldwide</p>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-70">
-            <div className="flex items-center space-x-2">
-              <div className="w-6 h-6 bg-secondary rounded flex items-center justify-center">
-                <span className="text-white text-xs font-bold">50+</span>
+          <p className="text-base text-gray-300 mb-6">Trusted by facilities worldwide</p>
+          <div className="flex flex-wrap justify-center items-center gap-10 opacity-70">
+            <div className="flex items-center space-x-3">
+              <div className="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center">
+                <span className="text-white text-sm font-bold">50+</span>
               </div>
-              <span className="text-sm">Countries</span>
+              <span className="text-base font-medium">Countries</span>
             </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-6 h-6 bg-secondary rounded flex items-center justify-center">
+            <div className="flex items-center space-x-3">
+              <div className="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center">
                 <span className="text-white text-xs font-bold">ISO</span>
               </div>
-              <span className="text-sm">Certified</span>
+              <span className="text-base font-medium">Certified</span>
             </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-6 h-6 bg-secondary rounded flex items-center justify-center">
+            <div className="flex items-center space-x-3">
+              <div className="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center">
                 <span className="text-white text-xs font-bold">24/7</span>
               </div>
-              <span className="text-sm">Support</span>
+              <span className="text-base font-medium">Support</span>
             </div>
           </div>
         </motion.div>
@@ -152,7 +152,7 @@ const HeroVideo: React.FC<HeroVideoProps> = ({
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.0 }}
           onClick={scrollToContent}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white hover:text-primary transition-colors"
+          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white hover:text-primary transition-colors"
           aria-label="Scroll to content"
         >
           <motion.div
@@ -160,8 +160,8 @@ const HeroVideo: React.FC<HeroVideoProps> = ({
             transition={{ duration: 2, repeat: Infinity }}
             className="flex flex-col items-center"
           >
-            <span className="text-sm font-medium mb-2">Scroll to explore</span>
-            <FiChevronDown className="h-6 w-6" />
+            <span className="text-base font-medium mb-3">Scroll to explore</span>
+            <FiChevronDown className="h-7 w-7" />
           </motion.div>
         </motion.button>
       )}

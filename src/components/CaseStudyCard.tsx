@@ -4,7 +4,8 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { FiArrowRight, FiMapPin } from 'react-icons/fi';
+import { FiMapPin } from 'react-icons/fi';
+import { ExpandingArrow } from '@/components/shared/icons';
 
 interface CaseStudyCardProps {
   title: string;
@@ -41,9 +42,9 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
         }}
         whileTap={{ scale: 0.98 }}
         className={`
-          group bg-white rounded-2xl shadow-lg hover:shadow-2xl 
+          group bg-white rounded-2xl shadow-xl hover:shadow-2xl 
           transition-all duration-300 overflow-hidden border border-gray-100
-          hover:border-primary/20 cursor-pointer
+          hover:border-primary/30 cursor-pointer
           ${featured ? 'lg:flex lg:items-center' : ''}
           ${className}
         `}
@@ -72,16 +73,16 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
         </div>
 
         {/* Content Section */}
-        <div className={`p-6 ${featured ? 'lg:w-1/2 lg:p-8' : ''}`}>
+        <div className={`p-8 ${featured ? 'lg:w-1/2 lg:p-10' : ''}`}>
           {/* Client Info */}
-          <div className="flex items-center mb-4">
-            <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mr-3">
-              <span className="text-primary font-bold text-sm">
+          <div className="flex items-center mb-6">
+            <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mr-4">
+              <span className="text-primary font-bold text-base">
                 {client.split(' ').map(word => word[0]).join('').substring(0, 2)}
               </span>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+              <h3 className="font-semibold text-lg text-gray-900 group-hover:text-primary transition-colors">
                 {client}
               </h3>
               <div className="flex items-center text-sm text-gray-600">
@@ -92,31 +93,31 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
           </div>
 
           {/* Title */}
-          <h4 className={`font-heading font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors ${
-            featured ? 'text-2xl' : 'text-xl'
+          <h4 className={`font-heading font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors ${
+            featured ? 'text-3xl' : 'text-2xl'
           }`}>
             {title}
           </h4>
 
           {/* Challenge */}
-          <div className="mb-4">
+          <div className="mb-6">
             <h5 className="text-sm font-semibold text-gray-700 mb-2 uppercase tracking-wide">Challenge</h5>
-            <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">
+            <p className="text-gray-600 text-base leading-relaxed line-clamp-3">
               {challenge}
             </p>
           </div>
 
           {/* Result */}
-          <div className="mb-6">
+          <div className="mb-8">
             <h5 className="text-sm font-semibold text-gray-700 mb-2 uppercase tracking-wide">Result</h5>
-            <div className="bg-secondary/10 rounded-lg p-4">
-              <div className={`font-bold text-secondary mb-1 ${
-                featured ? 'text-3xl' : 'text-2xl'
+            <div className="bg-secondary/10 rounded-xl p-6">
+              <div className={`font-bold text-secondary mb-2 ${
+                featured ? 'text-4xl' : 'text-3xl'
               }`}>
                 {result}
               </div>
               {resultDescription && (
-                <p className="text-gray-700 text-sm">
+                <p className="text-gray-700 text-base">
                   {resultDescription}
                 </p>
               )}
@@ -126,15 +127,15 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
           {/* Read More Link */}
           <div className="flex items-center justify-between">
             <div className="flex items-center text-primary font-medium group-hover:text-primary-dark transition-colors">
-              <span className="mr-2">Read Full Case Study</span>
-              <FiArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <span className="mr-3 text-lg">Read Full Case Study</span>
+              <ExpandingArrow className="h-5 w-5 text-current" />
             </div>
 
             {featured && (
               <div className="hidden lg:flex space-x-1">
-                <div className="w-2 h-2 bg-secondary/30 rounded-full"></div>
-                <div className="w-2 h-2 bg-secondary/60 rounded-full"></div>
-                <div className="w-2 h-2 bg-secondary rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-secondary/30 rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-secondary/60 rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-secondary rounded-full"></div>
               </div>
             )}
           </div>

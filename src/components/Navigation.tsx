@@ -46,19 +46,19 @@ const Navigation: React.FC = () => {
       isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <div className="flex items-center">
-              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3">
-                <span className="text-white font-bold text-lg">E</span>
+              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-4">
+                <span className="text-white font-bold text-xl">E</span>
               </div>
-              <span className="text-2xl font-heading font-bold text-gray-900">Ecolo</span>
+              <span className="text-3xl font-heading font-bold text-gray-900">Ecolo</span>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-10">
             {/* Products Mega Menu */}
             <div 
               className="relative"
@@ -77,14 +77,14 @@ const Navigation: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 10 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[600px] bg-white rounded-lg shadow-xl border border-gray-200 p-6"
+                    className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[650px] bg-white rounded-xl shadow-2xl border border-gray-200 p-8"
                   >
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-2 gap-6">
                       {productFamilies.map((family) => (
                         <Link
                           key={family.name}
                           href={family.href}
-                          className="flex items-start p-3 rounded-lg hover:bg-gray-50 transition-colors"
+                          className="flex items-start p-4 rounded-xl hover:bg-gray-50 transition-colors"
                         >
                           <span className="text-2xl mr-3">{family.icon}</span>
                           <div>
@@ -94,7 +94,7 @@ const Navigation: React.FC = () => {
                         </Link>
                       ))}
                     </div>
-                    <div className="border-t border-gray-200 mt-4 pt-4">
+                    <div className="border-t border-gray-200 mt-6 pt-6">
                       <Link
                         href="/products"
                         className="text-primary font-medium hover:text-primary-dark transition-colors"
@@ -130,13 +130,13 @@ const Navigation: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 10 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute top-full right-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2"
+                    className="absolute top-full right-0 mt-3 w-72 bg-white rounded-xl shadow-2xl border border-gray-200 py-3"
                   >
                     {industries.map((industry) => (
                       <Link
                         key={industry.name}
                         href={industry.href}
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors"
+                        className="block px-5 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors font-medium"
                       >
                         {industry.name}
                       </Link>
@@ -168,7 +168,7 @@ const Navigation: React.FC = () => {
           <div className="hidden lg:flex">
             <Link
               href="/distributor"
-              className="bg-accent text-white px-6 py-2 rounded-lg font-medium hover:bg-accent-dark transition-all hover:scale-105"
+              className="bg-accent text-white px-8 py-3 rounded-xl font-semibold hover:bg-accent-dark transition-all hover:scale-105 shadow-lg hover:shadow-xl text-lg"
             >
               Become a Partner
             </Link>
