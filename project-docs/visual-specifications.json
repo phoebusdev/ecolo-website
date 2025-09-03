@@ -1,0 +1,137 @@
+{
+  "design_principles": {
+    "overall_feel": "Modern & Clean with Industrial & Technical Aesthetic",
+    "layout": "Uncluttered layouts with ample white space",
+    "imagery": "High-quality, aspirational imagery of facilities where Ecolo solutions are deployed",
+    "typography": "Bold & Confident Typography for headlines to establish authority",
+    "graphics": "Engineering-focused icons and graphics"
+  },
+  "color_palette": {
+    "primary": {
+      "name": "Confident Blue",
+      "hex": "#0066CC",
+      "usage": "Primary buttons, headers, links",
+      "meaning": "Trust, technology, reliability"
+    },
+    "secondary": {
+      "name": "Environmental Green",
+      "hex": "#00A651",
+      "usage": "Secondary buttons, success states, eco-messaging",
+      "meaning": "Environmental safety, bio-solutions"
+    },
+    "accent": {
+      "name": "Energy Orange",
+      "hex": "#FF6B35",
+      "usage": "CTAs, highlights, important notifications",
+      "meaning": "Action, energy, urgency"
+    },
+    "neutrals": {
+      "white": "#FFFFFF",
+      "light_gray": "#F5F5F5",
+      "medium_gray": "#E5E5E5",
+      "dark_gray": "#666666",
+      "black": "#1A1A1A"
+    }
+  },
+  "typography": {
+    "font_families": {
+      "headings": "Inter or Montserrat",
+      "body": "Inter or system sans-serif"
+    },
+    "sizes": {
+      "h1": {"size": "48px", "line_height": "56px", "weight": "bold"},
+      "h2": {"size": "36px", "line_height": "44px", "weight": "bold"},
+      "h3": {"size": "24px", "line_height": "32px", "weight": "semibold"},
+      "h4": {"size": "20px", "line_height": "28px", "weight": "semibold"},
+      "body_large": {"size": "18px", "line_height": "28px", "weight": "normal"},
+      "body": {"size": "16px", "line_height": "24px", "weight": "normal"},
+      "small": {"size": "14px", "line_height": "20px", "weight": "normal"}
+    }
+  },
+  "components": {
+    "cards": {
+      "style": "Clean white background with subtle shadow",
+      "hover": "Shadow lift effect, slight scale transform",
+      "border_radius": "8px",
+      "padding": "24px"
+    },
+    "buttons": {
+      "primary": {
+        "background": "#0066CC",
+        "text": "#FFFFFF",
+        "hover": "Darken 10%",
+        "padding": "12px 24px",
+        "border_radius": "4px"
+      },
+      "secondary": {
+        "background": "#00A651",
+        "text": "#FFFFFF"
+      },
+      "cta": {
+        "background": "#FF6B35",
+        "text": "#FFFFFF",
+        "size": "larger",
+        "animation": "subtle pulse"
+      }
+    },
+    "navigation": {
+      "style": "Sticky header with background blur on scroll",
+      "menu": "Mega dropdown for Products, standard dropdown for Industries",
+      "mobile": "Hamburger menu with slide-out panel"
+    },
+    "forms": {
+      "input_style": "Outlined with focus state",
+      "label_position": "Above input",
+      "validation": "Inline error messages",
+      "submit_button": "Full width on mobile, auto width on desktop"
+    }
+  },
+  "animations": {
+    "scroll_effects": {
+      "fade_in": "Elements fade in as they enter viewport",
+      "slide_up": "Content slides up slightly on appearance",
+      "duration": "0.6s",
+      "easing": "ease-out"
+    },
+    "hover_effects": {
+      "cards": "Shadow lift and slight scale",
+      "buttons": "Background color change",
+      "images": "Subtle zoom"
+    },
+    "hero_video": {
+      "autoplay": true,
+      "loop": true,
+      "muted": true,
+      "overlay": "Dark gradient for text readability"
+    },
+    "counters": {
+      "animation": "Count up from 0 to final number",
+      "duration": "2s",
+      "trigger": "On viewport entry"
+    }
+  },
+  "responsive_breakpoints": {
+    "mobile": "375px - 767px",
+    "tablet": "768px - 1023px",
+    "desktop": "1024px - 1439px",
+    "wide": "1440px+"
+  },
+  "grid_system": {
+    "columns": {
+      "mobile": "1-2 columns",
+      "tablet": "2-3 columns",
+      "desktop": "3-4 columns",
+      "wide": "4-6 columns"
+    },
+    "gap": {
+      "mobile": "16px",
+      "tablet": "24px",
+      "desktop": "32px"
+    }
+  },
+  "inspiration_references": {
+    "biru_fullkit": "High-impact, full-screen style homepage with bold typography",
+    "manufacturer_industrial2": "Sophisticated technical feel with data visualization",
+    "roundingwp": "Product showcase layouts with filtering capabilities"
+  }
+}

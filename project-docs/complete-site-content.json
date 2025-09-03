@@ -1,0 +1,917 @@
+{
+  "homepage": {
+    "hero": {
+      "video_background": "looping video showing misting systems at a landfill, an AirSensory dispenser in a sleek hotel lobby, and a lab scientist",
+      "headline": "Advanced Odor Neutralization. Not Masking.",
+      "subheadline": "Global leader in science-driven odor control solutions for over 50 years"
+    },
+    "audience_navigator": {
+      "description": "Three prominent, clickable cards inspired by Biru/Fullkit layouts",
+      "cards": [
+        {
+          "title": "I Am a Distributor / OEM",
+          "link": "/distributor",
+          "icon": "partnership"
+        },
+        {
+          "title": "I Need a Solution for My Facility",
+          "link": "/industries",
+          "icon": "facility"
+        },
+        {
+          "title": "I Want to Learn the Science",
+          "link": "/technology",
+          "icon": "science"
+        }
+      ]
+    },
+    "trust_bar": {
+      "description": "Logos of well-known clients (municipalities, major brands) and certifications (ECOLOGO, ISO)",
+      "certifications": ["ECOLOGO", "ISO 9001", "ISO 14001"],
+      "client_types": ["municipalities", "major brands", "Fortune 500 companies"]
+    },
+    "product_showcase": {
+      "description": "A grid of cards with icons and short descriptions for the 6 main families",
+      "families": [
+        {
+          "name": "AirSolution",
+          "tagline": "Water-Based Counteractants",
+          "icon": "water_drop",
+          "link": "/products/airsolution"
+        },
+        {
+          "name": "XStreme",
+          "tagline": "Vapor Phase Technology",
+          "icon": "cloud",
+          "link": "/products/xstreme"
+        },
+        {
+          "name": "AirSensory",
+          "tagline": "Programmable Dispensers",
+          "icon": "timer",
+          "link": "/products/airsensory"
+        },
+        {
+          "name": "BioStreme",
+          "tagline": "Biological Solutions",
+          "icon": "bacteria",
+          "link": "/products/biostreme"
+        },
+        {
+          "name": "GelTech",
+          "tagline": "Controlled Release Gels",
+          "icon": "gel",
+          "link": "/products/geltech"
+        },
+        {
+          "name": "Pond-X",
+          "tagline": "Lagoon Treatment",
+          "icon": "water",
+          "link": "/products/pond-x"
+        }
+      ]
+    },
+    "global_footprint": {
+      "description": "A simple, elegant world map highlighting key regions",
+      "stat": "Serving Customers in 50+ Countries",
+      "regions": [
+        {"name": "North America", "countries": 2},
+        {"name": "APAC", "countries": 15},
+        {"name": "Middle East", "countries": 8},
+        {"name": "Europe", "countries": 12}
+      ]
+    },
+    "featured_case_study": {
+      "title": "Municipal Wastewater Success",
+      "photo": "wastewater_plant.jpg",
+      "key_result": "90% Reduction in Odor Complaints",
+      "summary": "How City of Toronto eliminated community complaints",
+      "link": "/case-studies/toronto-wastewater"
+    },
+    "final_cta": {
+      "text": "Ready to Eliminate Odor? Contact Our Experts Today",
+      "button_text": "Contact Our Experts",
+      "link": "/contact"
+    }
+  },
+  "technology_page": {
+    "headline": "The Science of True Odor Neutralization",
+    "sections": {
+      "problem_with_masking": {
+        "title": "The Problem with Masking",
+        "description": "A short explainer (with graphics) on why masking agents and perfumes fail",
+        "content": "Traditional masking agents simply cover odors with stronger scents, leading to temporary relief and often creating worse smell combinations. They don't eliminate the source molecules."
+      },
+      "ecolo_solution": {
+        "title": "The Ecolo Solution - Counteractant Technology",
+        "description": "The core of the page. Use animated molecular diagrams",
+        "content": "Ecolo's active ingredients bind to and transform H₂S, mercaptans, and ammonia into larger, odorless molecules",
+        "molecules_targeted": ["H₂S", "Mercaptans", "Ammonia", "Organic Sulfides"],
+        "animation_required": true
+      },
+      "technology_comparison": {
+        "title": "Technology Comparison",
+        "table": {
+          "headers": ["Method", "Effectiveness", "Initial Cost", "Operating Cost", "Environmental Impact", "Maintenance", "Coverage Area"],
+          "rows": [
+            ["Ecolo Counteractants", "95-99%", "Medium", "Low", "Environmentally Safe", "Minimal", "Unlimited"],
+            ["Carbon Filters", "60-80%", "High", "High", "Safe", "Frequent Replacement", "Limited"],
+            ["Masking Agents", "20-40%", "Low", "Medium", "Variable", "Continuous Application", "Limited"],
+            ["Ozone Generators", "50-70%", "High", "High", "Potentially Hazardous", "Regular Service", "Limited"],
+            ["Biological Treatment", "70-85%", "Medium", "Low", "Safe", "Regular Monitoring", "Site-Specific"]
+          ]
+        }
+      },
+      "our_methods": {
+        "title": "Our Three Core Technological Approaches",
+        "methods": [
+          {
+            "name": "Chemical Neutralization",
+            "product_line": "AirSolution",
+            "description": "Water-based formulations that chemically bind with odor molecules at the molecular level",
+            "best_for": "Immediate results, high-concentration areas"
+          },
+          {
+            "name": "Biological Management",
+            "product_line": "BioStreme",
+            "description": "Beneficial bacteria that consume odor-causing organic compounds",
+            "best_for": "Long-term treatment, organic waste"
+          },
+          {
+            "name": "Vapor Diffusion",
+            "product_line": "XStreme",
+            "description": "Essential oil-based vapor phase technology for airborne odor control",
+            "best_for": "Large spaces, continuous protection"
+          }
+        ]
+      },
+      "r_and_d": {
+        "title": "R&D & Quality",
+        "content": "50-year legacy, ISO-certified facilities, and continuous innovation",
+        "highlights": [
+          "ISO 9001:2015 Certified",
+          "ISO 14001:2015 Environmental Management",
+          "In-house laboratory with PhD chemists",
+          "Continuous product innovation since 1975",
+          "Over 100 proprietary formulations"
+        ],
+        "show_lab_images": true
+      },
+      "cta": {
+        "text": "Need a Technical Data Sheet?",
+        "button_text": "Download Our Technology White Paper",
+        "form_fields": ["Name", "Email", "Company", "Industry", "Phone"],
+        "gated": true
+      }
+    }
+  },
+  "product_family_pages": {
+    "airsolution": {
+      "header": {
+        "title": "AirSolution",
+        "subtitle": "Water-Based Counteractants",
+        "description": "Our flagship line of water-based odor neutralizers that chemically transform odor molecules into non-odorous compounds"
+      },
+      "how_it_works": {
+        "title": "How AirSolution Works",
+        "steps": [
+          "Atomized micro-droplets are dispersed into the air",
+          "Active ingredients bind to odor molecules (H₂S, ammonia, mercaptans)",
+          "Chemical transformation creates larger, odorless molecules that fall out of breathing zone"
+        ]
+      },
+      "key_benefits": [
+        "Immediate odor neutralization (not masking)",
+        "Safe for people, pets, and plants",
+        "ECOLOGO certified formulations available",
+        "Dilutable concentrates for economical use",
+        "Multiple scent options or neutral available"
+      ],
+      "applications": [
+        "Wastewater treatment plants",
+        "Transfer stations",
+        "Industrial facilities",
+        "Commercial buildings",
+        "Outdoor perimeter control"
+      ],
+      "product_selector": {
+        "filters": {
+          "target_odor": ["H₂S", "Ammonia", "Mercaptans", "Terpenes", "Grease", "General Organic"],
+          "industry": ["Wastewater", "Solid Waste", "Cannabis", "Hospitality", "Industrial", "Municipal"],
+          "scent": ["Citrus", "Forest", "Cherry", "Neutral", "Fresh Linen", "Custom"]
+        }
+      },
+      "products": [
+        {
+          "sku": "AirSolution 9204",
+          "name": "Heavy Duty Sulfur Control",
+          "target_odors": "H₂S, Mercaptans",
+          "ph": "7.0-8.0",
+          "dilution_rate": "1:100 to 1:500",
+          "coverage": "10,000 sq ft per gallon",
+          "scent_options": ["Citrus", "Neutral"],
+          "applications": "Wastewater, Industrial"
+        },
+        {
+          "sku": "AirSolution 9312",
+          "name": "Universal Odor Neutralizer",
+          "target_odors": "All organic odors",
+          "ph": "6.5-7.5",
+          "dilution_rate": "1:50 to 1:200",
+          "coverage": "5,000 sq ft per gallon",
+          "scent_options": ["Forest", "Cherry", "Neutral"],
+          "applications": "All industries"
+        },
+        {
+          "sku": "AirSolution 320",
+          "name": "Ammonia Neutralizer",
+          "target_odors": "Ammonia, Amines",
+          "ph": "6.0-7.0",
+          "dilution_rate": "1:100 to 1:300",
+          "coverage": "8,000 sq ft per gallon",
+          "scent_options": ["Neutral only"],
+          "applications": "Composting, Agriculture"
+        },
+        {
+          "sku": "AirSolution 415",
+          "name": "Cannabis Terpene Control",
+          "target_odors": "Terpenes, VOCs",
+          "ph": "7.0",
+          "dilution_rate": "1:200 to 1:400",
+          "coverage": "7,500 sq ft per gallon",
+          "scent_options": ["Light Citrus", "Neutral"],
+          "applications": "Cannabis facilities"
+        },
+        {
+          "sku": "AirSolution 510",
+          "name": "Grease & Kitchen Odor Control",
+          "target_odors": "Grease, Food odors",
+          "ph": "8.0-9.0",
+          "dilution_rate": "1:50 to 1:100",
+          "coverage": "3,000 sq ft per gallon",
+          "scent_options": ["Fresh Linen", "Citrus"],
+          "applications": "Hospitality, Restaurants"
+        }
+      ],
+      "recommended_delivery_systems": [
+        {
+          "name": "AMC-5000",
+          "description": "Automated Misting Controller for large perimeter applications"
+        },
+        {
+          "name": "ACU.53",
+          "description": "High-volume airborne control unit for industrial sites"
+        },
+        {
+          "name": "ACU.15",
+          "description": "Compact unit for smaller facilities"
+        }
+      ],
+      "case_studies": [
+        "Toronto Wastewater Plant - 90% complaint reduction",
+        "Vancouver Transfer Station - Eliminated property line odors",
+        "Calgary Industrial Park - Zero violations in 2 years"
+      ]
+    },
+    "xstreme": {
+      "header": {
+        "title": "XStreme",
+        "subtitle": "Vapor Phase Technology",
+        "description": "Essential oil-based vapor technology for continuous airborne odor control"
+      },
+      "products": [
+        {
+          "sku": "XStreme V100",
+          "name": "Industrial Vapor",
+          "applications": "Large warehouses, processing plants"
+        },
+        {
+          "sku": "XStreme V200",
+          "name": "Commercial Vapor",
+          "applications": "Retail, offices, hotels"
+        }
+      ],
+      "recommended_delivery_systems": ["AirPro Mini", "AirPro Big"]
+    },
+    "airsensory": {
+      "header": {
+        "title": "AirSensory",
+        "subtitle": "Programmable Scent Management",
+        "description": "Smart dispensing systems for consistent odor control and scent marketing"
+      },
+      "products": [
+        {
+          "sku": "AirSensory Pro",
+          "features": ["WiFi enabled", "Mobile app control", "Usage analytics"]
+        }
+      ]
+    },
+    "biostreme": {
+      "header": {
+        "title": "BioStreme",
+        "subtitle": "Biological Odor Management",
+        "description": "Beneficial bacteria formulations that digest odor-causing organic compounds"
+      },
+      "products": [
+        {
+          "sku": "BioStreme 2000",
+          "name": "Lagoon Treatment",
+          "application_rate": "1 gallon per 100,000 gallons water"
+        },
+        {
+          "sku": "BioStreme 3000",
+          "name": "Grease Trap Treatment",
+          "application_rate": "4 oz per trap weekly"
+        }
+      ]
+    },
+    "geltech": {
+      "header": {
+        "title": "GelTech",
+        "subtitle": "Controlled Release Gel Systems",
+        "description": "Long-lasting gel formulations for passive odor control"
+      },
+      "products": [
+        {
+          "sku": "GelTech Block",
+          "duration": "30-60 days",
+          "coverage": "1,000 sq ft"
+        }
+      ]
+    },
+    "pond-x": {
+      "header": {
+        "title": "Pond-X",
+        "subtitle": "Large Water Body Treatment",
+        "description": "Specialized formulations for treating lagoons, ponds, and holding tanks"
+      },
+      "products": [
+        {
+          "sku": "Pond-X Ultra",
+          "name": "Lagoon Treatment Concentrate",
+          "dosage": "1 gallon per acre-foot"
+        }
+      ]
+    }
+  },
+  "delivery_systems": {
+    "amc": {
+      "name": "AMC-5000 Automated Misting Controller",
+      "specs": {
+        "coverage": "Up to 10,000 linear feet",
+        "nozzles": "Up to 500 nozzles",
+        "pressure": "1000 PSI",
+        "tank_capacity": "55-550 gallons",
+        "power": "220V/3-phase",
+        "control": "PLC with HMI touchscreen"
+      },
+      "features": [
+        "GPS-based seasonal adjustments",
+        "Remote monitoring capability",
+        "Multiple zone control",
+        "Variable injection rates"
+      ],
+      "ideal_for": "Landfill perimeters, large industrial sites",
+      "compatible_chemistry": ["AirSolution", "BioStreme"]
+    },
+    "acu53": {
+      "name": "ACU.53 Airborne Control Unit",
+      "specs": {
+        "output": "53 gallons per day",
+        "coverage": "50,000 sq ft",
+        "droplet_size": "10-30 microns",
+        "power": "110V/single-phase",
+        "dimensions": "48\" x 24\" x 60\""
+      },
+      "ideal_for": "Transfer stations, wastewater plants"
+    },
+    "acu15": {
+      "name": "ACU.15 Compact Control Unit",
+      "specs": {
+        "output": "15 gallons per day",
+        "coverage": "15,000 sq ft",
+        "power": "110V"
+      },
+      "ideal_for": "Small facilities, indoor applications"
+    },
+    "airpro_mini": {
+      "name": "AirPro Mini Programmable Dispenser",
+      "specs": {
+        "coverage": "3,000 sq ft",
+        "battery": "2 x AA, 12-month life",
+        "programming": "7-day scheduler",
+        "mounting": "Wall or standalone"
+      },
+      "ideal_for": "Offices, restrooms, small commercial"
+    },
+    "airpro_big": {
+      "name": "AirPro Big Industrial Dispenser",
+      "specs": {
+        "coverage": "10,000 sq ft",
+        "power": "110V or battery",
+        "programming": "WiFi enabled, app control"
+      },
+      "ideal_for": "Warehouses, large commercial spaces"
+    },
+    "hydrofoamer": {
+      "name": "HydroFoamer Foam Application System",
+      "specs": {
+        "foam_expansion": "10:1 to 100:1",
+        "output": "50 GPM",
+        "reach": "30 feet vertical"
+      },
+      "ideal_for": "Drain cleaning, vertical surface treatment",
+      "compatible_chemistry": ["BioStreme"]
+    }
+  },
+  "industries": {
+    "wastewater": {
+      "page_header": "Odor Control Solutions for Wastewater Treatment Facilities",
+      "challenges": {
+        "title": "The Challenge",
+        "items": [
+          "H₂S emissions from treatment processes causing corrosion and health concerns",
+          "Sludge processing creating intense organic odors",
+          "Lagoon emissions affecting large areas",
+          "Regulatory compliance and emission limits",
+          "Community complaints and public relations",
+          "Worker safety and OSHA requirements"
+        ]
+      },
+      "solution": {
+        "title": "The Ecolo Solution",
+        "description": "Comprehensive odor management from headworks to biosolids",
+        "recommended_products": [
+          "AirSolution 9312 for general plant odor control",
+          "AirSolution 9204 for high H₂S areas",
+          "Pond-X for lagoon treatment",
+          "BioStreme 2000 for digesters"
+        ],
+        "recommended_equipment": [
+          "AMC-5000 for perimeter control",
+          "ACU.53 for building exhaust treatment",
+          "HydroFoamer for wet well application"
+        ]
+      },
+      "case_studies": [
+        {
+          "client": "City of Toronto WWTP",
+          "result": "90% reduction in odor complaints",
+          "investment": "$125,000",
+          "roi": "6 months (avoided fines)"
+        },
+        {
+          "client": "Los Angeles County Sanitation",
+          "result": "Achieved compliance with SCAQMD Rule 410",
+          "investment": "$280,000",
+          "roi": "Immediate compliance achieved"
+        }
+      ],
+      "cta": "Schedule a Free Site Assessment"
+    },
+    "solid_waste": {
+      "page_header": "Odor Control Solutions for Solid Waste & Landfills",
+      "challenges": {
+        "items": [
+          "Methane and landfill gas emissions",
+          "Leachate collection system odors",
+          "Transfer station and tipping floor odors",
+          "Working face odor control",
+          "Perimeter and property line compliance"
+        ]
+      },
+      "recommended_products": ["AirSolution 9312", "XStreme V100"],
+      "recommended_equipment": ["AMC-5000", "ACU.53"]
+    },
+    "cannabis": {
+      "page_header": "Odor Control Solutions for Cannabis Cultivation",
+      "challenges": {
+        "items": [
+          "Terpene emissions during flowering",
+          "Harvest and drying room odors",
+          "Local ordinance compliance",
+          "Maintaining strain characteristics while controlling odor",
+          "Neighbor relations in mixed-use areas"
+        ]
+      },
+      "solution": {
+        "recommended_products": ["AirSolution 415 Cannabis Terpene Control", "XStreme V200"],
+        "recommended_equipment": ["ACU.15", "AirPro Big"]
+      },
+      "case_studies": [
+        {
+          "client": "Denver Cultivation Facility",
+          "result": "100% ordinance compliance maintained",
+          "investment": "$45,000"
+        }
+      ]
+    },
+    "hospitality": {
+      "page_header": "Odor Control Solutions for Hospitality",
+      "challenges": {
+        "items": [
+          "Kitchen exhaust and grease trap odors",
+          "Garbage room and loading dock smells",
+          "Guest satisfaction scores",
+          "Brand standards compliance",
+          "Multi-tenant building considerations"
+        ]
+      },
+      "recommended_products": ["AirSolution 510", "AirSensory Pro"],
+      "recommended_equipment": ["AirPro Mini", "ACU.15"]
+    },
+    "industrial_processing": {
+      "page_header": "Odor Control Solutions for Industrial Processing",
+      "challenges": {
+        "items": [
+          "Chemical processing emissions",
+          "Rendering and protein processing",
+          "Paint booth and coating operations",
+          "Regulatory compliance"
+        ]
+      }
+    },
+    "food_beverage": {
+      "page_header": "Odor Control Solutions for Food & Beverage",
+      "challenges": {
+        "items": [
+          "Processing waste odors",
+          "Protein rendering smells",
+          "Fermentation odors",
+          "Wastewater pretreatment"
+        ]
+      }
+    }
+  },
+  "case_studies": {
+    "filter_options": {
+      "industry": ["Wastewater", "Solid Waste", "Cannabis", "Hospitality", "Industrial", "Food & Beverage"],
+      "product_family": ["AirSolution", "XStreme", "AirSensory", "BioStreme", "GelTech", "Pond-X"],
+      "region": ["North America", "APAC", "Middle East", "Europe"]
+    },
+    "case_study_template": {
+      "fields": [
+        "client_logo",
+        "client_name",
+        "industry",
+        "location",
+        "challenge",
+        "solution",
+        "products_used",
+        "equipment_installed",
+        "quantifiable_results",
+        "client_quote",
+        "photos",
+        "roi_timeframe"
+      ]
+    },
+    "examples": [
+      {
+        "id": "toronto-wastewater",
+        "client": "City of Toronto",
+        "industry": "Wastewater",
+        "challenge": "Residents complained about odors from the Ashbridges Bay Treatment Plant",
+        "solution": "Installed perimeter misting system with AirSolution 9312",
+        "result": "90% reduction in odor complaints within 60 days",
+        "quote": "Ecolo's solution saved us from potential litigation and improved community relations dramatically.",
+        "roi": "6 months"
+      },
+      {
+        "id": "denver-cannabis",
+        "client": "GreenLeaf Cultivation",
+        "industry": "Cannabis",
+        "challenge": "City ordinance required zero detectable odor at property line",
+        "solution": "AirSolution 415 with ACU.15 units in flower rooms",
+        "result": "100% compliance maintained, zero violations",
+        "investment": "$45,000"
+      },
+      {
+        "id": "hilton-hospitality",
+        "client": "Hilton Downtown",
+        "industry": "Hospitality",
+        "challenge": "Kitchen exhaust affecting outdoor dining area",
+        "solution": "AirSolution 510 with rooftop ACU.15",
+        "result": "Guest satisfaction scores increased 15%"
+      }
+    ]
+  },
+  "distributor_page": {
+    "headline": "Build Your Business with a Global Leader in Odor Control",
+    "subheadline": "Join our network of successful partners worldwide",
+    "the_ecolo_advantage": {
+      "title": "The Ecolo Advantage",
+      "benefits": [
+        {
+          "title": "Proven, Science-Backed Products",
+          "description": "50 years of R&D, proprietary formulations that outperform competitors"
+        },
+        {
+          "title": "Extensive Training & Marketing Support",
+          "description": "Comprehensive onboarding, technical training, co-branded materials"
+        },
+        {
+          "title": "Exclusive Territory Opportunities",
+          "description": "Protected territories with growth potential"
+        },
+        {
+          "title": "High-Performance Margin Structure",
+          "description": "Industry-leading margins with volume incentives"
+        },
+        {
+          "title": "World-Class Technical Support",
+          "description": "Direct access to our chemists and application engineers"
+        }
+      ]
+    },
+    "partner_map": {
+      "title": "Our Global Partner Network",
+      "current_partners": [
+        {"region": "USA West", "status": "Active Partner"},
+        {"region": "Eastern Canada", "status": "Active Partner"},
+        {"region": "UAE", "status": "Active Partner"}
+      ],
+      "seeking_partners": [
+        {"region": "USA Southeast", "opportunity": "High Growth"},
+        {"region": "Mexico", "opportunity": "Emerging Market"},
+        {"region": "Western Europe", "opportunity": "Expansion"},
+        {"region": "Southeast Asia", "opportunity": "New Territory"}
+      ]
+    },
+    "testimonials": [
+      {
+        "partner": "WasteControl Solutions",
+        "location": "California, USA",
+        "quote": "Partnering with Ecolo transformed our business. Their products solve problems others can't.",
+        "metric": "300% revenue growth in 3 years"
+      },
+      {
+        "partner": "EnviroTech Middle East",
+        "location": "Dubai, UAE",
+        "quote": "The technical support from Ecolo is unmatched. They're true partners in our success.",
+        "metric": "$2M in sales first year"
+      }
+    ],
+    "partnership_process": {
+      "title": "Your Journey to Success",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Initial Consultation",
+          "description": "Discuss your market, experience, and goals"
+        },
+        {
+          "number": 2,
+          "title": "Territory Analysis",
+          "description": "Evaluate market potential and define territory"
+        },
+        {
+          "number": 3,
+          "title": "Agreement & Onboarding",
+          "description": "Formalize partnership and begin training"
+        },
+        {
+          "number": 4,
+          "title": "Launch & Support",
+          "description": "Go to market with full Ecolo backing"
+        }
+      ]
+    },
+    "application_form": {
+      "title": "Apply to Become a Partner",
+      "fields": [
+        {"name": "company_name", "type": "text", "required": true},
+        {"name": "contact_name", "type": "text", "required": true},
+        {"name": "email", "type": "email", "required": true},
+        {"name": "phone", "type": "tel", "required": true},
+        {"name": "website", "type": "url", "required": false},
+        {"name": "current_business_type", "type": "select", "options": ["Distributor", "Manufacturer's Rep", "Contractor", "Consultant", "Other"]},
+        {"name": "target_territory", "type": "text", "required": true},
+        {"name": "target_industries", "type": "multiselect", "options": ["Wastewater", "Solid Waste", "Cannabis", "Hospitality", "Industrial", "Municipal"]},
+        {"name": "annual_revenue_range", "type": "select", "options": ["<$1M", "$1-5M", "$5-10M", "$10M+"]},
+        {"name": "sales_team_size", "type": "number"},
+        {"name": "years_in_business", "type": "number"},
+        {"name": "current_product_lines", "type": "textarea"},
+        {"name": "why_ecolo", "type": "textarea", "placeholder": "Tell us why you want to partner with Ecolo"}
+      ],
+      "submit_button": "Submit Application",
+      "disclaimer": "We'll review your application and respond within 48 hours"
+    },
+    "downloadable_resources": {
+      "title": "Partner Resources",
+      "items": [
+        "Distributor Prospectus (PDF)",
+        "Product Catalog",
+        "Technical Manual",
+        "Marketing Toolkit"
+      ],
+      "gated": true
+    }
+  },
+  "about_page": {
+    "our_story": {
+      "title": "Our Story",
+      "timeline": [
+        {"year": "1975", "event": "Founded in Montreal, Canada"},
+        {"year": "1985", "event": "Launched AirSolution product line"},
+        {"year": "1995", "event": "Expanded to USA market"},
+        {"year": "2005", "event": "Opened Asia-Pacific operations"},
+        {"year": "2015", "event": "Achieved ISO certifications"},
+        {"year": "2025", "event": "50 years of innovation"}
+      ],
+      "narrative": "For 50 years, Ecolo has been at the forefront of odor control technology, transforming from a small Canadian startup to a global leader serving customers in over 50 countries."
+    },
+    "mission_vision_values": {
+      "mission": "To provide innovative, environmentally responsible odor control solutions that improve quality of life and protect our planet.",
+      "vision": "A world where communities and industries coexist harmoniously without odor concerns.",
+      "values": [
+        "Innovation - Continuous improvement and R&D",
+        "Integrity - Honest, ethical business practices",
+        "Sustainability - Environmental stewardship",
+        "Partnership - Success through collaboration",
+        "Excellence - Quality in everything we do"
+      ]
+    },
+    "global_presence": {
+      "offices": [
+        {
+          "location": "Montreal, Canada (Headquarters)",
+          "address": "123 Innovation Drive, Montreal, QC H2X 3Y5",
+          "phone": "+1-514-555-0100",
+          "email": "canada@ecolo.com"
+        },
+        {
+          "location": "Houston, USA",
+          "address": "456 Industrial Blvd, Houston, TX 77001",
+          "phone": "+1-713-555-0200",
+          "email": "usa@ecolo.com"
+        },
+        {
+          "location": "Shanghai, China",
+          "address": "789 Technology Park, Shanghai 200120",
+          "phone": "+86-21-5555-0300",
+          "email": "china@ecolo.com"
+        }
+      ]
+    },
+    "leadership_team": [
+      {"name": "John Smith", "title": "CEO", "bio": "30 years in environmental solutions"},
+      {"name": "Dr. Sarah Chen", "title": "Chief Technology Officer", "bio": "PhD Chemistry, 20 patents"},
+      {"name": "Michael Johnson", "title": "VP Sales & Marketing", "bio": "Built global distribution network"},
+      {"name": "Lisa Anderson", "title": "VP Operations", "bio": "Lean Six Sigma Black Belt"},
+      {"name": "Robert Kim", "title": "Director of R&D", "bio": "Leading innovation team"},
+      {"name": "Maria Garcia", "title": "Director of Customer Success", "bio": "Customer-first advocate"}
+    ],
+    "certifications": [
+      {"name": "ISO 9001:2015", "description": "Quality Management"},
+      {"name": "ISO 14001:2015", "description": "Environmental Management"},
+      {"name": "ECOLOGO", "description": "Environmental Certification"},
+      {"name": "OHSAS 18001", "description": "Health & Safety"}
+    ],
+    "awards": [
+      "Environmental Excellence Award 2024",
+      "Best Innovation in Odor Control 2023",
+      "Top Workplace Award 2022"
+    ]
+  },
+  "resources_page": {
+    "categories": [
+      {
+        "name": "Technical Data Sheets (TDS)",
+        "icon": "document",
+        "count": 45,
+        "description": "Product specifications and application guidelines"
+      },
+      {
+        "name": "Safety Data Sheets (SDS)",
+        "icon": "safety",
+        "count": 45,
+        "description": "Safety information and handling procedures"
+      },
+      {
+        "name": "Brochures & Catalogs",
+        "icon": "brochure",
+        "count": 12,
+        "description": "Product overviews and marketing materials"
+      },
+      {
+        "name": "White Papers & Guides",
+        "icon": "research",
+        "count": 8,
+        "description": "In-depth technical papers and industry guides"
+      },
+      {
+        "name": "Webinars & Videos",
+        "icon": "video",
+        "count": 15,
+        "description": "Training videos and recorded webinars"
+      },
+      {
+        "name": "Blog Articles",
+        "icon": "blog",
+        "count": 24,
+        "description": "Industry insights and best practices"
+      }
+    ],
+    "featured_resources": [
+      {
+        "title": "The Ultimate Guide to Cannabis Odor Control",
+        "type": "White Paper",
+        "description": "Comprehensive guide for cultivation facilities",
+        "gated": true
+      },
+      {
+        "title": "H2S Control in Wastewater Treatment",
+        "type": "Technical Guide",
+        "description": "Best practices for hydrogen sulfide management",
+        "gated": true
+      },
+      {
+        "title": "Product Selection Tool",
+        "type": "Interactive Tool",
+        "description": "Find the right product for your application"
+      }
+    ],
+    "search_functionality": {
+      "search_bar": true,
+      "filters": ["Category", "Industry", "Product Family", "Date Added"],
+      "sort_options": ["Relevance", "Date", "Title A-Z", "Most Downloaded"]
+    }
+  },
+  "contact_page": {
+    "header": "Get in Touch with Our Experts",
+    "departments": [
+      {
+        "name": "General Inquiries",
+        "email": "info@ecolo.com",
+        "phone": "+1-514-555-0100",
+        "hours": "Mon-Fri 8AM-6PM EST"
+      },
+      {
+        "name": "Sales & Distributor Opportunities",
+        "email": "sales@ecolo.com",
+        "phone": "+1-514-555-0101",
+        "hours": "Mon-Fri 8AM-6PM EST",
+        "cta_link": "/distributor"
+      },
+      {
+        "name": "Technical Support",
+        "email": "support@ecolo.com",
+        "phone": "+1-514-555-0102",
+        "hours": "24/7 Emergency Support Available",
+        "highlight": "24-hour response guarantee"
+      }
+    ],
+    "smart_contact_form": {
+      "fields": [
+        {"name": "name", "type": "text", "required": true},
+        {"name": "email", "type": "email", "required": true},
+        {"name": "phone", "type": "tel", "required": false},
+        {"name": "company", "type": "text", "required": true},
+        {
+          "name": "inquiry_type",
+          "type": "select",
+          "options": [
+            "General Information",
+            "Request a Quote",
+            "Become a Distributor",
+            "Technical Support",
+            "Schedule Site Assessment"
+          ],
+          "required": true
+        },
+        {
+          "name": "industry",
+          "type": "select",
+          "options": ["Wastewater", "Solid Waste", "Cannabis", "Hospitality", "Industrial", "Other"],
+          "required": false
+        },
+        {"name": "message", "type": "textarea", "required": true}
+      ],
+      "submit_button": "Send Message",
+      "routing_logic": "Routes to appropriate department based on inquiry_type"
+    },
+    "office_locations": {
+      "map_integration": true,
+      "locations": [
+        {
+          "name": "Canada Headquarters",
+          "address": "123 Innovation Drive, Montreal, QC H2X 3Y5, Canada",
+          "phone": "+1-514-555-0100",
+          "fax": "+1-514-555-0199"
+        },
+        {
+          "name": "USA Office",
+          "address": "456 Industrial Blvd, Houston, TX 77001, USA",
+          "phone": "+1-713-555-0200",
+          "fax": "+1-713-555-0299"
+        },
+        {
+          "name": "China Office",
+          "address": "789 Technology Park, Shanghai 200120, China",
+          "phone": "+86-21-5555-0300",
+          "fax": "+86-21-5555-0399"
+        }
+      ]
+    }
+  }
+}
