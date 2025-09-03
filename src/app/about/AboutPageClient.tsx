@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FiUsers, FiGlobe, FiAward, FiHeart, FiTarget, FiTrendingUp, FiPhone, FiMail, FiMapPin } from 'react-icons/fi';
 import CTAButton from '@/components/CTAButton';
@@ -430,9 +431,11 @@ export default function AboutPageClient() {
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center group"
               >
                 <div className="mb-6">
-                  <img
+                  <Image
                     src={member.image}
                     alt={member.name}
+                    width={96}
+                    height={96}
                     className="w-24 h-24 rounded-full object-cover mx-auto mb-4 group-hover:scale-105 transition-transform duration-300"
                   />
                   <h3 className="text-xl font-heading font-medium text-gray-900 mb-1">{member.name}</h3>

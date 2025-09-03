@@ -251,12 +251,6 @@ export default function Home() {
                     scale: 140,
                     center: [0, 30]
                   }}
-                  style={{
-                    default: {
-                      fill: "#E5E7EB",
-                      outline: "none"
-                    }
-                  }}
                 >
                   <Geographies geography={geoUrl}>
                     {({ geographies }) =>

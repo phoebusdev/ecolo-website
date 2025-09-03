@@ -17,7 +17,7 @@ export function nFormatter(num: number, digits?: number) {
     { value: 1e18, symbol: "E" },
   ];
   const rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
-  var item = lookup
+  const item = lookup
     .slice()
     .reverse()
     .find(function (item) {
@@ -61,7 +61,7 @@ export const timeAgo = (timestamp: Date, timeOnly?: boolean): string => {
   return `${result}${timeOnly ? "" : " ago"}`;
 };
 
-export async function fetcher<JSON = any>(
+export async function fetcher<JSON = unknown>(
   input: RequestInfo,
   init?: RequestInit,
 ): Promise<JSON> {

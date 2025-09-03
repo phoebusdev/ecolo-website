@@ -11,7 +11,6 @@ interface HeroVideoProps {
   showCTA?: boolean;
   ctaText?: string;
   ctaLink?: string;
-  showScrollIndicator?: boolean;
 }
 
 const HeroVideo: React.FC<HeroVideoProps> = ({
@@ -20,8 +19,7 @@ const HeroVideo: React.FC<HeroVideoProps> = ({
   videoUrl = "/hero-vid.mp4",
   showCTA = true,
   ctaText = "Explore Solutions",
-  ctaLink = "#solutions",
-  showScrollIndicator = true
+  ctaLink = "#solutions"
 }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
 

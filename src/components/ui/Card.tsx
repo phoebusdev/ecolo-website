@@ -36,14 +36,14 @@ export default function Card({
         <div className="prose-sm mt-3 leading-normal text-gray-500 [text-wrap:balance] md:prose">
           <ReactMarkdown
             components={{
-              a: ({ node, ...props }) => (
+              a: ({ ...props }) => (
                 <a
                   target="_blank"
                   {...props}
                   className="font-medium text-green-700 underline transition-colors hover:text-green-800"
                 />
               ),
-              code: ({ node, ...props }) => (
+              code: ({ ...props }) => (
                 <code
                   {...props}
                   className="rounded-sm bg-green-50 px-1 py-0.5 font-mono font-medium text-green-800"
