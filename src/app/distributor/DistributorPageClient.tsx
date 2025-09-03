@@ -96,7 +96,7 @@ export default function DistributorPageClient() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl lg:text-6xl font-heading font-bold text-white mb-6">
+            <h1 className="text-4xl lg:text-6xl font-heading font-light text-white mb-6">
               Build Your Business with a <span className="text-accent">Global Leader</span>
             </h1>
             <p className="text-xl lg:text-2xl text-blue-100 max-w-3xl mx-auto mb-8">
@@ -124,7 +124,7 @@ export default function DistributorPageClient() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+              className="text-3xl lg:text-4xl font-heading font-light text-gray-900 mb-6"
             >
               The Ecolo Advantage
             </motion.h2>
@@ -183,7 +183,7 @@ export default function DistributorPageClient() {
                 <div className={`inline-flex items-center justify-center w-16 h-16 rounded-xl ${benefit.color} text-white mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   {benefit.icon}
                 </div>
-                <h3 className="text-xl font-heading font-bold text-gray-900 mb-4">{benefit.title}</h3>
+                <h3 className="text-xl font-heading font-medium text-gray-900 mb-4">{benefit.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
               </motion.div>
             ))}
@@ -200,7 +200,7 @@ export default function DistributorPageClient() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+              className="text-3xl lg:text-4xl font-heading font-light text-gray-900 mb-6"
             >
               Our Global Partner Network
             </motion.h2>
@@ -256,7 +256,7 @@ export default function DistributorPageClient() {
                   <text
                     textAnchor="middle"
                     y={-15}
-                    style={{ fontFamily: "Inter", fontSize: 12, fontWeight: 500, fill: "#10B981" }}
+                    style={{ fontFamily: "Inter", fontSize: 12, fontWeight: 400, fill: "#10B981" }}
                   >
                     {name}
                   </text>
@@ -270,7 +270,7 @@ export default function DistributorPageClient() {
                   <text
                     textAnchor="middle"
                     y={-15}
-                    style={{ fontFamily: "Inter", fontSize: 12, fontWeight: 500, fill: "#F59E0B" }}
+                    style={{ fontFamily: "Inter", fontSize: 12, fontWeight: 400, fill: "#F59E0B" }}
                   >
                     {name}
                   </text>
@@ -281,11 +281,11 @@ export default function DistributorPageClient() {
             <div className="flex flex-col sm:flex-row gap-8 mt-6 justify-center">
               <div className="flex items-center">
                 <div className="w-4 h-4 bg-green-500 rounded-full mr-3"></div>
-                <span className="text-gray-700 font-medium">Active Partners</span>
+                <span className="text-gray-700 font-normal">Active Partners</span>
               </div>
               <div className="flex items-center">
                 <div className="w-4 h-4 bg-yellow-500 rounded-full mr-3"></div>
-                <span className="text-gray-700 font-medium">Partnership Opportunities</span>
+                <span className="text-gray-700 font-normal">Partnership Opportunities</span>
               </div>
             </div>
           </motion.div>
@@ -301,7 +301,7 @@ export default function DistributorPageClient() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+              className="text-3xl lg:text-4xl font-heading font-light text-gray-900 mb-6"
             >
               Partner Success Stories
             </motion.h2>
@@ -352,14 +352,14 @@ export default function DistributorPageClient() {
                       className="w-12 h-12 rounded-full object-cover mr-4"
                     />
                     <div>
-                      <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                      <div className="text-primary font-medium">{testimonial.partner}</div>
+                      <div className="font-medium text-gray-900">{testimonial.name}</div>
+                      <div className="text-primary font-normal">{testimonial.partner}</div>
                       <div className="text-gray-600 text-sm">{testimonial.location}</div>
                     </div>
                   </div>
                   
                   <div className="text-right">
-                    <div className="text-2xl font-bold text-accent">{testimonial.metric.split(' ')[0]}</div>
+                    <div className="text-2xl font-medium text-accent">{testimonial.metric.split(' ')[0]}</div>
                     <div className="text-gray-600 text-sm">{testimonial.metric.split(' ').slice(1).join(' ')}</div>
                   </div>
                 </div>
@@ -378,7 +378,7 @@ export default function DistributorPageClient() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+              className="text-3xl lg:text-4xl font-heading font-light text-gray-900 mb-6"
             >
               Your Journey to Success
             </motion.h2>
@@ -424,10 +424,10 @@ export default function DistributorPageClient() {
                 viewport={{ once: true }}
                 className="bg-white rounded-xl p-8 shadow-lg text-center hover:shadow-xl transition-all duration-300 relative"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary text-white text-2xl font-bold mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary text-white text-2xl font-medium mb-6">
                   {step.number}
                 </div>
-                <h3 className="text-xl font-heading font-bold text-gray-900 mb-4">{step.title}</h3>
+                <h3 className="text-xl font-heading font-medium text-gray-900 mb-4">{step.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{step.description}</p>
                 
                 {index < 3 && (
@@ -450,7 +450,7 @@ export default function DistributorPageClient() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+              className="text-3xl lg:text-4xl font-heading font-light text-gray-900 mb-6"
             >
               Apply to Become a Partner
             </motion.h2>
@@ -475,7 +475,7 @@ export default function DistributorPageClient() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="company_name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="company_name" className="block text-sm font-normal text-gray-700 mb-2">
                     Company Name *
                   </label>
                   <input
@@ -490,7 +490,7 @@ export default function DistributorPageClient() {
                 </div>
                 
                 <div>
-                  <label htmlFor="contact_name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="contact_name" className="block text-sm font-normal text-gray-700 mb-2">
                     Contact Name *
                   </label>
                   <input
@@ -507,7 +507,7 @@ export default function DistributorPageClient() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-normal text-gray-700 mb-2">
                     Email Address *
                   </label>
                   <input
@@ -522,7 +522,7 @@ export default function DistributorPageClient() {
                 </div>
                 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="phone" className="block text-sm font-normal text-gray-700 mb-2">
                     Phone Number *
                   </label>
                   <input
@@ -538,7 +538,7 @@ export default function DistributorPageClient() {
               </div>
 
               <div>
-                <label htmlFor="website" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="website" className="block text-sm font-normal text-gray-700 mb-2">
                   Website
                 </label>
                 <input
@@ -553,7 +553,7 @@ export default function DistributorPageClient() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="current_business_type" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="current_business_type" className="block text-sm font-normal text-gray-700 mb-2">
                     Current Business Type *
                   </label>
                   <select
@@ -574,7 +574,7 @@ export default function DistributorPageClient() {
                 </div>
                 
                 <div>
-                  <label htmlFor="target_territory" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="target_territory" className="block text-sm font-normal text-gray-700 mb-2">
                     Target Territory *
                   </label>
                   <input
@@ -592,7 +592,7 @@ export default function DistributorPageClient() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="annual_revenue_range" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="annual_revenue_range" className="block text-sm font-normal text-gray-700 mb-2">
                     Annual Revenue Range
                   </label>
                   <select
@@ -611,7 +611,7 @@ export default function DistributorPageClient() {
                 </div>
                 
                 <div>
-                  <label htmlFor="sales_team_size" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="sales_team_size" className="block text-sm font-normal text-gray-700 mb-2">
                     Sales Team Size
                   </label>
                   <input
@@ -627,7 +627,7 @@ export default function DistributorPageClient() {
               </div>
 
               <div>
-                <label htmlFor="target_industries" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="target_industries" className="block text-sm font-normal text-gray-700 mb-2">
                   Target Industries (hold Ctrl/Cmd to select multiple)
                 </label>
                 <select
@@ -648,7 +648,7 @@ export default function DistributorPageClient() {
               </div>
 
               <div>
-                <label htmlFor="current_product_lines" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="current_product_lines" className="block text-sm font-normal text-gray-700 mb-2">
                   Current Product Lines
                 </label>
                 <textarea
@@ -663,7 +663,7 @@ export default function DistributorPageClient() {
               </div>
 
               <div>
-                <label htmlFor="why_ecolo" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="why_ecolo" className="block text-sm font-normal text-gray-700 mb-2">
                   Why do you want to partner with Ecolo? *
                 </label>
                 <textarea
@@ -706,7 +706,7 @@ export default function DistributorPageClient() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+              className="text-3xl lg:text-4xl font-heading font-light text-gray-900 mb-6"
             >
               Partner Resources
             </motion.h2>
@@ -760,15 +760,15 @@ export default function DistributorPageClient() {
                   <div className="p-3 bg-primary rounded-lg text-white group-hover:scale-110 transition-transform duration-300">
                     {resource.icon}
                   </div>
-                  <span className="text-xs font-medium bg-gray-100 text-gray-600 px-2 py-1 rounded">
+                  <span className="text-xs font-normal bg-gray-100 text-gray-600 px-2 py-1 rounded">
                     {resource.type}
                   </span>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                <h3 className="text-lg font-medium text-gray-900 mb-2 group-hover:text-primary transition-colors">
                   {resource.title}
                 </h3>
                 <p className="text-gray-600 text-sm mb-4">{resource.description}</p>
-                <div className="text-primary font-medium text-sm flex items-center group-hover:text-primary-dark transition-colors">
+                <div className="text-primary font-normal text-sm flex items-center group-hover:text-primary-dark transition-colors">
                   Download Now
                   <FiArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </div>

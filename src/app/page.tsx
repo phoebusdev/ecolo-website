@@ -88,7 +88,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="text-4xl lg:text-5xl font-heading font-bold text-gray-900 mb-8"
+                className="text-4xl lg:text-5xl font-heading font-light text-gray-900 mb-8"
               >
                 Find Your Solution
               </motion.h2>
@@ -164,7 +164,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="text-4xl lg:text-5xl font-heading font-bold text-gray-900 mb-8"
+                className="text-4xl lg:text-5xl font-heading font-light text-gray-900 mb-8"
               >
                 Our Product Families
               </motion.h2>
@@ -222,7 +222,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="text-4xl lg:text-5xl font-heading font-bold text-gray-900 mb-8"
+                className="text-4xl lg:text-5xl font-heading font-light text-gray-900 mb-8"
               >
                 Global Footprint
               </motion.h2>
@@ -242,47 +242,89 @@ export default function Home() {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="bg-white rounded-2xl shadow-xl p-12 mb-16"
+              className="bg-white rounded-2xl shadow-xl p-8 mb-16"
             >
-              <ComposableMap
-                projection="geoMercator"
-                projectionConfig={{
-                  scale: 100,
-                  center: [0, 20]
-                }}
-                className="w-full h-96"
-              >
-                <Geographies geography={geoUrl}>
-                  {({ geographies }) =>
-                    geographies.map((geo) => (
-                      <Geography
-                        key={geo.rsmKey}
-                        geography={geo}
-                        fill="#E5E7EB"
-                        stroke="#D1D5DB"
-                        strokeWidth={0.5}
-                        style={{
-                          default: { outline: "none" },
-                          hover: { outline: "none", fill: "#0066CC" },
-                          pressed: { outline: "none" },
+              <div className="w-full" style={{ height: '500px' }}>
+                <ComposableMap
+                  projection="geoMercator"
+                  projectionConfig={{
+                    scale: 140,
+                    center: [0, 30]
+                  }}
+                  style={{
+                    default: {
+                      fill: "#E5E7EB",
+                      outline: "none"
+                    }
+                  }}
+                >
+                  <Geographies geography={geoUrl}>
+                    {({ geographies }) =>
+                      geographies.map((geo) => (
+                        <Geography
+                          key={geo.rsmKey}
+                          geography={geo}
+                          fill="#E5E7EB"
+                          stroke="#FFF"
+                          strokeWidth={0.5}
+                          style={{
+                            default: { 
+                              fill: "#E5E7EB",
+                              stroke: "#FFF",
+                              strokeWidth: 0.5,
+                              outline: "none" 
+                            },
+                            hover: { 
+                              fill: "#CBD5E1",
+                              stroke: "#FFF",
+                              strokeWidth: 0.5,
+                              outline: "none" 
+                            },
+                            pressed: { 
+                              fill: "#94A3B8",
+                              stroke: "#FFF",
+                              strokeWidth: 0.5,
+                              outline: "none" 
+                            },
+                          }}
+                        />
+                      ))
+                    }
+                  </Geographies>
+                  {markers.map(({ name, coordinates }) => (
+                    <Marker key={name} coordinates={coordinates}>
+                      <g>
+                        <circle 
+                          r={6} 
+                          fill="#0066CC" 
+                          stroke="#fff" 
+                          strokeWidth={2}
+                          style={{
+                            filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.2))"
+                          }}
+                        />
+                        <circle 
+                          r={3} 
+                          fill="#fff"
+                        />
+                      </g>
+                      <text
+                        textAnchor="middle"
+                        y={-12}
+                        style={{ 
+                          fontFamily: "Inter, system-ui, sans-serif", 
+                          fontSize: 14, 
+                          fontWeight: 600, 
+                          fill: "#1F2937",
+                          filter: "drop-shadow(0 1px 2px rgba(255,255,255,0.8))"
                         }}
-                      />
-                    ))
-                  }
-                </Geographies>
-                {markers.map(({ name, coordinates }) => (
-                  <Marker key={name} coordinates={coordinates}>
-                    <circle r={8} fill="#0066CC" stroke="#fff" strokeWidth={2} />
-                    <text
-                      textAnchor="middle"
-                      y={-15}
-                      style={{ fontFamily: "Inter", fontSize: 12, fontWeight: 500, fill: "#374151" }}
-                    >
-                      {name}
-                    </text>
-                  </Marker>
-                ))}
-              </ComposableMap>
+                      >
+                        {name}
+                      </text>
+                    </Marker>
+                  ))}
+                </ComposableMap>
+              </div>
             </motion.div>
 
             {/* Regional Stats */}
@@ -322,7 +364,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="text-4xl lg:text-5xl font-heading font-bold text-gray-900 mb-8"
+                className="text-4xl lg:text-5xl font-heading font-light text-gray-900 mb-8"
               >
                 Success Stories
               </motion.h2>

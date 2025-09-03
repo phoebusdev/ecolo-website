@@ -123,7 +123,7 @@ export default function ContactPageClient() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl lg:text-6xl font-heading font-bold text-white mb-6">
+            <h1 className="text-4xl lg:text-6xl font-heading font-light text-white mb-6">
               Get in Touch with <span className="text-accent">Our Experts</span>
             </h1>
             <p className="text-xl lg:text-2xl text-blue-100 max-w-3xl mx-auto mb-8">
@@ -142,7 +142,7 @@ export default function ContactPageClient() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+              className="text-3xl lg:text-4xl font-heading font-light text-gray-900 mb-6"
             >
               How Can We Help?
             </motion.h2>
@@ -174,9 +174,9 @@ export default function ContactPageClient() {
                     {dept.icon}
                   </div>
                   <div>
-                    <h3 className="text-xl font-heading font-bold text-gray-900 mb-1">{dept.name}</h3>
+                    <h3 className="text-xl font-heading font-medium text-gray-900 mb-1">{dept.name}</h3>
                     {dept.highlight && (
-                      <span className="text-xs bg-accent text-white px-2 py-1 rounded-full">
+                      <span className="text-xs bg-accent text-white px-2 py-1 rounded-full font-normal">
                         {dept.highlight}
                       </span>
                     )}
@@ -226,7 +226,7 @@ export default function ContactPageClient() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+              className="text-3xl lg:text-4xl font-heading font-light text-gray-900 mb-6"
             >
               Send Us a Message
             </motion.h2>
@@ -251,7 +251,7 @@ export default function ContactPageClient() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-normal text-gray-700 mb-2">
                     Full Name *
                   </label>
                   <input
@@ -267,7 +267,7 @@ export default function ContactPageClient() {
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-normal text-gray-700 mb-2">
                     Email Address *
                   </label>
                   <input
@@ -285,7 +285,7 @@ export default function ContactPageClient() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="phone" className="block text-sm font-normal text-gray-700 mb-2">
                     Phone Number
                   </label>
                   <input
@@ -300,7 +300,7 @@ export default function ContactPageClient() {
                 </div>
                 
                 <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="company" className="block text-sm font-normal text-gray-700 mb-2">
                     Company Name *
                   </label>
                   <input
@@ -318,7 +318,7 @@ export default function ContactPageClient() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="inquiry_type" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="inquiry_type" className="block text-sm font-normal text-gray-700 mb-2">
                     Type of Inquiry *
                   </label>
                   <select
@@ -343,7 +343,7 @@ export default function ContactPageClient() {
                 </div>
                 
                 <div>
-                  <label htmlFor="industry" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="industry" className="block text-sm font-normal text-gray-700 mb-2">
                     Industry
                   </label>
                   <select
@@ -369,7 +369,7 @@ export default function ContactPageClient() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-normal text-gray-700 mb-2">
                   Message *
                 </label>
                 <textarea
@@ -409,7 +409,7 @@ export default function ContactPageClient() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+              className="text-3xl lg:text-4xl font-heading font-light text-gray-900 mb-6"
             >
               Our Global Offices
             </motion.h2>
@@ -443,9 +443,9 @@ export default function ContactPageClient() {
                     <FiMapPin className="h-6 w-6" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-heading font-bold text-gray-900">{office.name}</h3>
+                    <h3 className="text-lg font-heading font-medium text-gray-900">{office.name}</h3>
                     {office.isHQ && (
-                      <span className="text-xs bg-primary text-white px-2 py-1 rounded-full mt-1 inline-block">
+                      <span className="text-xs bg-primary text-white px-2 py-1 rounded-full mt-1 inline-block font-normal">
                         Headquarters
                       </span>
                     )}
@@ -506,7 +506,7 @@ export default function ContactPageClient() {
               </div>
             </div>
             
-            <h2 className="text-3xl lg:text-4xl font-heading font-bold text-white mb-6">
+            <h2 className="text-3xl lg:text-4xl font-heading font-light text-white mb-6">
               24/7 Emergency Support Available
             </h2>
             <p className="text-xl text-orange-100 max-w-3xl mx-auto mb-8">
@@ -516,12 +516,12 @@ export default function ContactPageClient() {
             <div className="flex flex-col sm:flex-row gap-6 items-center justify-center">
               <div className="flex items-center text-white">
                 <FiStar className="h-6 w-6 text-yellow-300 mr-2" />
-                <span className="font-semibold">24-hour response guarantee</span>
+                <span className="font-medium">24-hour response guarantee</span>
               </div>
               
               <div className="flex items-center text-white">
                 <FiPhone className="h-6 w-6 text-orange-200 mr-2" />
-                <a href="tel:+1-514-555-0102" className="font-semibold hover:text-orange-200 transition-colors">
+                <a href="tel:+1-514-555-0102" className="font-medium hover:text-orange-200 transition-colors">
                   +1-514-555-0102
                 </a>
               </div>

@@ -123,7 +123,7 @@ export default function CaseStudiesPage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-4xl md:text-6xl font-heading font-bold text-gray-900 mb-6"
+              className="text-4xl md:text-6xl font-heading font-light text-gray-900 mb-6"
             >
               Real Results from
               <span className="text-primary block">Real Customers</span>
@@ -152,12 +152,12 @@ export default function CaseStudiesPage() {
           >
             <div className="flex items-center mb-4">
               <FiFilter className="h-5 w-5 text-primary mr-2" />
-              <h2 className="text-lg font-semibold text-gray-900">Filter Case Studies</h2>
+              <h2 className="text-lg font-medium text-gray-900">Filter Case Studies</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Industry</label>
+                <label className="block text-sm font-normal text-gray-700 mb-2">Industry</label>
                 <select
                   value={selectedIndustry}
                   onChange={(e) => setSelectedIndustry(e.target.value)}
@@ -170,7 +170,7 @@ export default function CaseStudiesPage() {
               </div>
               
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Product Family</label>
+                <label className="block text-sm font-normal text-gray-700 mb-2">Product Family</label>
                 <select
                   value={selectedProduct}
                   onChange={(e) => setSelectedProduct(e.target.value)}
@@ -183,7 +183,7 @@ export default function CaseStudiesPage() {
               </div>
               
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Region</label>
+                <label className="block text-sm font-normal text-gray-700 mb-2">Region</label>
                 <select
                   value={selectedRegion}
                   onChange={(e) => setSelectedRegion(e.target.value)}
@@ -229,11 +229,11 @@ export default function CaseStudiesPage() {
                       </div>
                     </div>
 
-                    <h3 className="text-xl font-heading font-bold text-gray-900 group-hover:text-primary transition-colors mb-2">
+                    <h3 className="text-xl font-heading font-medium text-gray-900 group-hover:text-primary transition-colors mb-2">
                       {study.title}
                     </h3>
                     
-                    <p className="text-primary font-semibold text-sm mb-3">{study.client}</p>
+                    <p className="text-primary font-medium text-sm mb-3">{study.client}</p>
 
                     <p className="text-gray-600 text-sm mb-4 line-clamp-2">
                       {study.challenge}
@@ -243,7 +243,7 @@ export default function CaseStudiesPage() {
                     <div className="bg-green-50 rounded-lg p-3 mb-4">
                       <div className="flex items-center mb-1">
                         <FiTrendingUp className="h-4 w-4 text-green-600 mr-1" />
-                        <span className="text-sm font-semibold text-green-800">Key Result</span>
+                        <span className="text-sm font-medium text-green-800">Key Result</span>
                       </div>
                       <p className="text-green-700 text-sm">{study.result}</p>
                     </div>
@@ -251,11 +251,11 @@ export default function CaseStudiesPage() {
                     {/* Investment & ROI */}
                     <div className="grid grid-cols-2 gap-3 mb-4">
                       <div className="text-center bg-gray-50 rounded-lg p-2">
-                        <div className="text-lg font-bold text-primary">{study.investment}</div>
+                        <div className="text-lg font-medium text-primary">{study.investment}</div>
                         <div className="text-xs text-gray-500">Investment</div>
                       </div>
                       <div className="text-center bg-gray-50 rounded-lg p-2">
-                        <div className="text-lg font-bold text-green-600">{study.roi}</div>
+                        <div className="text-lg font-medium text-green-600">{study.roi}</div>
                         <div className="text-xs text-gray-500">ROI</div>
                       </div>
                     </div>
@@ -263,12 +263,12 @@ export default function CaseStudiesPage() {
                     {/* Footer */}
                     <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                       <div className="flex items-center">
-                        <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-medium">
+                        <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-normal">
                           {study.productFamily}
                         </span>
                       </div>
                       
-                      <div className="flex items-center text-primary font-medium group-hover:text-primary-dark transition-colors">
+                      <div className="flex items-center text-primary font-normal group-hover:text-primary-dark transition-colors">
                         <span className="text-sm mr-1">Read More</span>
                         <FiArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                       </div>
@@ -285,26 +285,26 @@ export default function CaseStudiesPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-heading font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-heading font-light text-gray-900 mb-4">
               Proven Track Record of Success
             </h2>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">2000+</div>
+              <div className="text-4xl font-medium text-primary mb-2">2000+</div>
               <div className="text-gray-700">Successful Installations</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">95%</div>
+              <div className="text-4xl font-medium text-green-600 mb-2">95%</div>
               <div className="text-gray-700">Average Odor Reduction</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">50+</div>
+              <div className="text-4xl font-medium text-blue-600 mb-2">50+</div>
               <div className="text-gray-700">Countries Served</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-purple-600 mb-2">12</div>
+              <div className="text-4xl font-medium text-purple-600 mb-2">12</div>
               <div className="text-gray-700">Months Avg ROI</div>
             </div>
           </div>
@@ -328,14 +328,14 @@ export default function CaseStudiesPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-dark transition-all hover:scale-105 inline-flex items-center justify-center"
+                className="bg-primary text-white px-8 py-4 rounded-lg font-medium hover:bg-primary-dark transition-all hover:scale-105 inline-flex items-center justify-center"
               >
                 <span>Schedule Your Assessment</span>
                 <FiArrowRight className="ml-2 h-5 w-5" />
               </Link>
               <Link
                 href="/products"
-                className="border border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-all inline-flex items-center justify-center"
+                className="border border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-gray-900 transition-all inline-flex items-center justify-center"
               >
                 Explore Our Solutions
               </Link>

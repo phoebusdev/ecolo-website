@@ -46,26 +46,26 @@ const Navigation: React.FC = () => {
       isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 lg:h-24">
+        <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <div className="flex items-center">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-4">
-                <span className="text-white font-bold text-xl">E</span>
+              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3">
+                <span className="text-white font-bold text-lg">E</span>
               </div>
-              <span className="text-3xl font-heading font-bold text-gray-900">Ecolo</span>
+              <span className="text-2xl font-heading font-bold text-gray-900">Ecolo</span>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-10">
+          <div className="hidden lg:flex items-center space-x-8">
             {/* Products Mega Menu */}
             <div 
               className="relative"
               onMouseEnter={() => setActiveDropdown('products')}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              <button className="flex items-center text-gray-700 hover:text-primary transition-colors font-medium">
+              <button className="flex items-center text-gray-700 hover:text-primary transition-colors font-medium text-sm">
                 Products
                 <FiChevronDown className="ml-1 h-4 w-4" />
               </button>
@@ -77,27 +77,27 @@ const Navigation: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 10 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[650px] bg-white rounded-xl shadow-2xl border border-gray-200 p-8"
+                    className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[600px] bg-white rounded-xl shadow-2xl border border-gray-200 p-6"
                   >
-                    <div className="grid grid-cols-2 gap-6">
+                    <div className="grid grid-cols-2 gap-4">
                       {productFamilies.map((family) => (
                         <Link
                           key={family.name}
                           href={family.href}
-                          className="flex items-start p-4 rounded-xl hover:bg-gray-50 transition-colors"
+                          className="flex items-start p-3 rounded-lg hover:bg-gray-50 transition-colors"
                         >
-                          <span className="text-2xl mr-3">{family.icon}</span>
+                          <span className="text-xl mr-3">{family.icon}</span>
                           <div>
-                            <h3 className="font-semibold text-gray-900">{family.name}</h3>
-                            <p className="text-sm text-gray-600 mt-1">{family.tagline}</p>
+                            <h3 className="font-semibold text-gray-900 text-sm">{family.name}</h3>
+                            <p className="text-xs text-gray-600 mt-0.5">{family.tagline}</p>
                           </div>
                         </Link>
                       ))}
                     </div>
-                    <div className="border-t border-gray-200 mt-6 pt-6">
+                    <div className="border-t border-gray-200 mt-4 pt-4">
                       <Link
                         href="/products"
-                        className="text-primary font-medium hover:text-primary-dark transition-colors"
+                        className="text-primary font-medium hover:text-primary-dark transition-colors text-sm"
                       >
                         View All Products →
                       </Link>
@@ -108,7 +108,7 @@ const Navigation: React.FC = () => {
             </div>
 
             {/* Equipment */}
-            <Link href="/equipment" className="text-gray-700 hover:text-primary transition-colors font-medium">
+            <Link href="/equipment" className="text-gray-700 hover:text-primary transition-colors font-medium text-sm">
               Equipment
             </Link>
 
@@ -118,7 +118,7 @@ const Navigation: React.FC = () => {
               onMouseEnter={() => setActiveDropdown('industries')}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              <button className="flex items-center text-gray-700 hover:text-primary transition-colors font-medium">
+              <button className="flex items-center text-gray-700 hover:text-primary transition-colors font-medium text-sm">
                 Industries
                 <FiChevronDown className="ml-1 h-4 w-4" />
               </button>
@@ -130,13 +130,13 @@ const Navigation: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 10 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute top-full right-0 mt-3 w-72 bg-white rounded-xl shadow-2xl border border-gray-200 py-3"
+                    className="absolute top-full right-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border border-gray-200 py-2"
                   >
                     {industries.map((industry) => (
                       <Link
                         key={industry.name}
                         href={industry.href}
-                        className="block px-5 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors font-medium"
+                        className="block px-4 py-2.5 text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors font-medium text-sm"
                       >
                         {industry.name}
                       </Link>
@@ -147,28 +147,28 @@ const Navigation: React.FC = () => {
             </div>
 
             {/* Other nav items */}
-            <Link href="/technology" className="text-gray-700 hover:text-primary transition-colors font-medium">
+            <Link href="/technology" className="text-gray-700 hover:text-primary transition-colors font-medium text-sm">
               Technology
             </Link>
-            <Link href="/case-studies" className="text-gray-700 hover:text-primary transition-colors font-medium">
+            <Link href="/case-studies" className="text-gray-700 hover:text-primary transition-colors font-medium text-sm">
               Case Studies
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-primary transition-colors font-medium">
+            <Link href="/about" className="text-gray-700 hover:text-primary transition-colors font-medium text-sm">
               About
             </Link>
-            <Link href="/resources" className="text-gray-700 hover:text-primary transition-colors font-medium">
+            <Link href="/resources" className="text-gray-700 hover:text-primary transition-colors font-medium text-sm">
               Resources
             </Link>
-            <Link href="/contact" className="text-gray-700 hover:text-primary transition-colors font-medium">
+            <Link href="/contact" className="text-gray-700 hover:text-primary transition-colors font-medium text-sm">
               Contact
             </Link>
           </div>
 
           {/* CTA Button */}
-          <div className="hidden lg:flex">
+          <div className="hidden lg:flex ml-8">
             <Link
               href="/distributor"
-              className="bg-accent text-white px-8 py-3 rounded-xl font-semibold hover:bg-accent-dark transition-all hover:scale-105 shadow-lg hover:shadow-xl text-lg"
+              className="bg-accent text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-accent-dark transition-all hover:scale-105 shadow-md hover:shadow-lg text-sm"
             >
               Become a Partner
             </Link>

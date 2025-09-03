@@ -73,7 +73,7 @@ export default function ProductsPage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-4xl md:text-6xl font-heading font-bold text-gray-900 mb-6"
+              className="text-4xl md:text-6xl font-heading font-light text-gray-900 mb-6"
             >
               Complete Odor Control
               <span className="text-primary block">Product Portfolio</span>
@@ -94,13 +94,13 @@ export default function ProductsPage() {
               className="flex flex-wrap justify-center gap-4 mb-12"
             >
               <div className="bg-white px-4 py-2 rounded-full shadow-md">
-                <span className="text-sm font-medium text-gray-700">50+ Years of Innovation</span>
+                <span className="text-sm font-normal text-gray-700">50+ Years of Innovation</span>
               </div>
               <div className="bg-white px-4 py-2 rounded-full shadow-md">
-                <span className="text-sm font-medium text-gray-700">100+ Proprietary Formulations</span>
+                <span className="text-sm font-normal text-gray-700">100+ Proprietary Formulations</span>
               </div>
               <div className="bg-white px-4 py-2 rounded-full shadow-md">
-                <span className="text-sm font-medium text-gray-700">ISO Certified</span>
+                <span className="text-sm font-normal text-gray-700">ISO Certified</span>
               </div>
             </motion.div>
           </div>
@@ -124,10 +124,10 @@ export default function ProductsPage() {
                     <div className="flex items-center mb-6">
                       <div className="text-5xl mr-4">{family.icon}</div>
                       <div>
-                        <h3 className="text-2xl font-heading font-bold text-gray-900 group-hover:text-primary transition-colors">
+                        <h3 className="text-2xl font-heading font-medium text-gray-900 group-hover:text-primary transition-colors">
                           {family.name}
                         </h3>
-                        <p className="text-primary font-semibold text-sm">{family.tagline}</p>
+                        <p className="text-primary font-medium text-sm">{family.tagline}</p>
                       </div>
                     </div>
 
@@ -139,12 +139,12 @@ export default function ProductsPage() {
                     {/* Key Benefit */}
                     <div className="bg-primary/5 rounded-lg p-4 mb-6">
                       <div className="text-sm font-medium text-primary mb-1">Key Benefit</div>
-                      <div className="text-gray-900 font-semibold">{family.keyBenefit}</div>
+                      <div className="text-gray-900 font-medium">{family.keyBenefit}</div>
                     </div>
 
                     {/* Applications */}
                     <div className="mb-6">
-                      <div className="text-sm font-medium text-gray-700 mb-2">Ideal Applications:</div>
+                      <div className="text-sm font-normal text-gray-700 mb-2">Ideal Applications:</div>
                       <div className="flex flex-wrap gap-2">
                         {family.applications.map((app, idx) => (
                           <span key={idx} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">
@@ -156,7 +156,7 @@ export default function ProductsPage() {
 
                     {/* Footer */}
                     <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                      <div className="flex items-center text-primary font-medium group-hover:text-primary-dark transition-colors">
+                      <div className="flex items-center text-primary font-normal group-hover:text-primary-dark transition-colors">
                         <span className="text-sm mr-2">Explore Products</span>
                         <FiArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                       </div>
@@ -180,7 +180,7 @@ export default function ProductsPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-heading font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-heading font-light text-gray-900 mb-4">
               Three Core Technological Approaches
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -198,9 +198,9 @@ export default function ProductsPage() {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl">⚗️</span>
               </div>
-              <h3 className="text-xl font-heading font-bold text-gray-900 mb-4">Chemical Neutralization</h3>
+              <h3 className="text-xl font-heading font-medium text-gray-900 mb-4">Chemical Neutralization</h3>
               <p className="text-gray-600 mb-4">Water-based formulations that chemically bind with odor molecules at the molecular level</p>
-              <div className="text-sm text-primary font-semibold">AirSolution Family</div>
+              <div className="text-sm text-primary font-medium">AirSolution Family</div>
             </motion.div>
 
             <motion.div 
@@ -212,9 +212,9 @@ export default function ProductsPage() {
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl">🦠</span>
               </div>
-              <h3 className="text-xl font-heading font-bold text-gray-900 mb-4">Biological Management</h3>
+              <h3 className="text-xl font-heading font-medium text-gray-900 mb-4">Biological Management</h3>
               <p className="text-gray-600 mb-4">Beneficial bacteria that consume odor-causing organic compounds naturally</p>
-              <div className="text-sm text-green-600 font-semibold">BioStreme Family</div>
+              <div className="text-sm text-green-600 font-medium">BioStreme Family</div>
             </motion.div>
 
             <motion.div 
@@ -226,9 +226,9 @@ export default function ProductsPage() {
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl">💨</span>
               </div>
-              <h3 className="text-xl font-heading font-bold text-gray-900 mb-4">Vapor Diffusion</h3>
+              <h3 className="text-xl font-heading font-medium text-gray-900 mb-4">Vapor Diffusion</h3>
               <p className="text-gray-600 mb-4">Essential oil-based vapor phase technology for airborne odor control</p>
-              <div className="text-sm text-blue-600 font-semibold">XStreme Family</div>
+              <div className="text-sm text-blue-600 font-medium">XStreme Family</div>
             </motion.div>
           </div>
         </div>
@@ -242,7 +242,7 @@ export default function ProductsPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-heading font-bold mb-4">
+            <h2 className="text-3xl font-heading font-light mb-4">
               Need Help Selecting the Right Product?
             </h2>
             <p className="text-xl text-gray-300 mb-8">
@@ -251,14 +251,14 @@ export default function ProductsPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-dark transition-all hover:scale-105 inline-flex items-center justify-center"
+                className="bg-primary text-white px-8 py-4 rounded-lg font-medium hover:bg-primary-dark transition-all hover:scale-105 inline-flex items-center justify-center"
               >
                 <span>Contact Our Experts</span>
                 <FiArrowRight className="ml-2 h-5 w-5" />
               </Link>
               <Link
                 href="/technology"
-                className="border border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-all inline-flex items-center justify-center"
+                className="border border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-gray-900 transition-all inline-flex items-center justify-center"
               >
                 Learn the Science
               </Link>

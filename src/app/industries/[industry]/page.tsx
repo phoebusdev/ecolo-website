@@ -261,7 +261,7 @@ export default function IndustryPage({ params }: PageProps) {
             >
               <div className="text-6xl mr-4">{data.icon}</div>
               <div className="text-left">
-                <h1 className="text-4xl md:text-6xl font-heading font-bold text-gray-900">
+                <h1 className="text-4xl md:text-6xl font-heading font-light text-gray-900">
                   {data.page_header}
                 </h1>
               </div>
@@ -273,13 +273,13 @@ export default function IndustryPage({ params }: PageProps) {
               className="flex flex-wrap justify-center gap-4 mb-8"
             >
               <div className="bg-white px-4 py-2 rounded-full shadow-md">
-                <span className="text-sm font-medium text-gray-700">Industry Expert Solutions</span>
+                <span className="text-sm font-normal text-gray-700">Industry Expert Solutions</span>
               </div>
               <div className="bg-white px-4 py-2 rounded-full shadow-md">
-                <span className="text-sm font-medium text-gray-700">Regulatory Compliance</span>
+                <span className="text-sm font-normal text-gray-700">Regulatory Compliance</span>
               </div>
               <div className="bg-white px-4 py-2 rounded-full shadow-md">
-                <span className="text-sm font-medium text-gray-700">Proven Results</span>
+                <span className="text-sm font-normal text-gray-700">Proven Results</span>
               </div>
             </motion.div>
           </div>
@@ -299,7 +299,7 @@ export default function IndustryPage({ params }: PageProps) {
             >
               <div className="flex items-center mb-6">
                 <FiAlertTriangle className="h-8 w-8 text-red-600 mr-3" />
-                <h2 className="text-3xl font-heading font-bold text-gray-900">
+                <h2 className="text-3xl font-heading font-light text-gray-900">
                   {data.challenges.title}
                 </h2>
               </div>
@@ -323,7 +323,7 @@ export default function IndustryPage({ params }: PageProps) {
               >
                 <div className="flex items-center mb-6">
                   <FiCheckCircle className="h-8 w-8 text-green-600 mr-3" />
-                  <h2 className="text-3xl font-heading font-bold text-gray-900">
+                  <h2 className="text-3xl font-heading font-light text-gray-900">
                     {data.solution.title}
                   </h2>
                 </div>
@@ -331,7 +331,7 @@ export default function IndustryPage({ params }: PageProps) {
                 
                 {/* Recommended Products */}
                 <div className="mb-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-4">Recommended Products:</h3>
+                  <h3 className="text-lg font-medium text-gray-900 mb-4">Recommended Products:</h3>
                   <div className="space-y-2">
                     {data.solution.recommended_products.map((product: string, index: number) => (
                       <div key={index} className="flex items-center">
@@ -344,7 +344,7 @@ export default function IndustryPage({ params }: PageProps) {
 
                 {/* Recommended Equipment */}
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-4">Recommended Equipment:</h3>
+                  <h3 className="text-lg font-medium text-gray-900 mb-4">Recommended Equipment:</h3>
                   <div className="space-y-2">
                     {data.solution.recommended_equipment.map((equipment: string, index: number) => (
                       <div key={index} className="flex items-center">
@@ -364,7 +364,7 @@ export default function IndustryPage({ params }: PageProps) {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-heading font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-heading font-light text-gray-900 mb-4">
               Success Stories
             </h2>
             <p className="text-xl text-gray-600">
@@ -383,24 +383,24 @@ export default function IndustryPage({ params }: PageProps) {
               >
                 <div className="flex items-center mb-4">
                   <FiAward className="h-8 w-8 text-primary mr-3" />
-                  <h3 className="text-xl font-heading font-bold text-gray-900">
+                  <h3 className="text-xl font-heading font-medium text-gray-900">
                     {study.client}
                   </h3>
                 </div>
                 
                 <div className="space-y-4">
                   <div className="bg-green-100 rounded-lg p-4">
-                    <div className="text-sm font-semibold text-green-800 mb-1">Result Achieved</div>
+                    <div className="text-sm font-medium text-green-800 mb-1">Result Achieved</div>
                     <div className="text-green-700">{study.result}</div>
                   </div>
                   
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-blue-50 rounded-lg p-3 text-center">
-                      <div className="text-lg font-bold text-blue-800">{study.investment}</div>
+                      <div className="text-lg font-medium text-blue-800">{study.investment}</div>
                       <div className="text-xs text-blue-600">Investment</div>
                     </div>
                     <div className="bg-purple-50 rounded-lg p-3 text-center">
-                      <div className="text-lg font-bold text-purple-800">{study.roi}</div>
+                      <div className="text-lg font-medium text-purple-800">{study.roi}</div>
                       <div className="text-xs text-purple-600">ROI Timeline</div>
                     </div>
                   </div>
@@ -415,7 +415,7 @@ export default function IndustryPage({ params }: PageProps) {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-heading font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-heading font-light text-gray-900 mb-4">
               Our Implementation Process
             </h2>
             <p className="text-xl text-gray-600">
@@ -437,10 +437,10 @@ export default function IndustryPage({ params }: PageProps) {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 className="text-center"
               >
-                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-medium text-xl">
                   {phase.step}
                 </div>
-                <h3 className="text-lg font-heading font-bold text-gray-900 mb-2">{phase.title}</h3>
+                <h3 className="text-lg font-heading font-medium text-gray-900 mb-2">{phase.title}</h3>
                 <p className="text-gray-600 text-sm">{phase.desc}</p>
                 {index < 3 && (
                   <div className="hidden md:block absolute top-8 left-1/2 w-full h-0.5 bg-gray-200 transform translate-x-1/2" />
@@ -459,7 +459,7 @@ export default function IndustryPage({ params }: PageProps) {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-heading font-bold mb-4">
+            <h2 className="text-3xl font-heading font-light mb-4">
               {data.cta || "Ready to Get Started?"}
             </h2>
             <p className="text-xl text-primary-light mb-8">
@@ -468,14 +468,14 @@ export default function IndustryPage({ params }: PageProps) {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all hover:scale-105 inline-flex items-center justify-center"
+                className="bg-white text-primary px-8 py-4 rounded-lg font-medium hover:bg-gray-100 transition-all hover:scale-105 inline-flex items-center justify-center"
               >
                 <span>Schedule Site Assessment</span>
                 <FiArrowRight className="ml-2 h-5 w-5" />
               </Link>
               <Link
                 href="/products"
-                className="border border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all inline-flex items-center justify-center"
+                className="border border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-primary transition-all inline-flex items-center justify-center"
               >
                 View Our Products
               </Link>

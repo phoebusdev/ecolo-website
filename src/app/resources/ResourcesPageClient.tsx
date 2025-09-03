@@ -150,7 +150,7 @@ export default function ResourcesPageClient() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl lg:text-6xl font-heading font-bold text-white mb-6">
+            <h1 className="text-4xl lg:text-6xl font-heading font-light text-white mb-6">
               Technical <span className="text-accent">Resources</span>
             </h1>
             <p className="text-xl lg:text-2xl text-blue-100 max-w-3xl mx-auto mb-8">
@@ -169,7 +169,7 @@ export default function ResourcesPageClient() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+              className="text-3xl lg:text-4xl font-heading font-light text-gray-900 mb-6"
             >
               Featured Resources
             </motion.h2>
@@ -208,20 +208,20 @@ export default function ResourcesPageClient() {
                 className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-primary/10"
               >
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-medium bg-primary text-white px-3 py-1 rounded-full">
+                  <span className="text-xs font-normal bg-primary text-white px-3 py-1 rounded-full">
                     Featured
                   </span>
                   {resource.gated && (
-                    <span className="text-xs font-medium bg-accent text-white px-3 py-1 rounded-full">
+                    <span className="text-xs font-normal bg-accent text-white px-3 py-1 rounded-full">
                       Gated
                     </span>
                   )}
                 </div>
                 
-                <h3 className="text-xl font-heading font-bold text-gray-900 mb-3">
+                <h3 className="text-xl font-heading font-medium text-gray-900 mb-3">
                   {resource.title}
                 </h3>
-                <p className="text-sm font-medium text-primary mb-3">{resource.type}</p>
+                <p className="text-sm font-normal text-primary mb-3">{resource.type}</p>
                 <p className="text-gray-600 mb-6">{resource.description}</p>
                 
                 <CTAButton variant="primary" size="small" href="#" icon="arrow">
@@ -243,7 +243,7 @@ export default function ResourcesPageClient() {
               <div className="lg:hidden mb-4">
                 <button
                   onClick={() => setShowFilters(!showFilters)}
-                  className="flex items-center justify-center w-full px-4 py-3 bg-white rounded-lg shadow-lg font-medium text-gray-700 hover:text-primary transition-colors"
+                  className="flex items-center justify-center w-full px-4 py-3 bg-white rounded-lg shadow-lg font-normal text-gray-700 hover:text-primary transition-colors"
                 >
                   <FiFilter className="h-5 w-5 mr-2" />
                   Filters
@@ -262,7 +262,7 @@ export default function ResourcesPageClient() {
                   >
                     {/* Search */}
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                      <label className="block text-sm font-normal text-gray-700 mb-2">
                         Search Resources
                       </label>
                       <div className="relative">
@@ -279,7 +279,7 @@ export default function ResourcesPageClient() {
 
                     {/* Category Filter */}
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-4">Categories</h3>
+                      <h3 className="text-lg font-medium text-gray-900 mb-4">Categories</h3>
                       <div className="space-y-2">
                         <button
                           onClick={() => setSelectedCategory('All')}
@@ -313,7 +313,7 @@ export default function ResourcesPageClient() {
 
                     {/* Industry Filter */}
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-4">Industry</h3>
+                      <h3 className="text-lg font-medium text-gray-900 mb-4">Industry</h3>
                       <select
                         value={selectedIndustry}
                         onChange={(e) => setSelectedIndustry(e.target.value)}
@@ -327,7 +327,7 @@ export default function ResourcesPageClient() {
 
                     {/* Product Family Filter */}
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-4">Product Family</h3>
+                      <h3 className="text-lg font-medium text-gray-900 mb-4">Product Family</h3>
                       <select
                         value={selectedProductFamily}
                         onChange={(e) => setSelectedProductFamily(e.target.value)}
@@ -348,7 +348,7 @@ export default function ResourcesPageClient() {
               {/* Sort and Results Count */}
               <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 bg-white rounded-xl shadow-lg p-6">
                 <div>
-                  <h2 className="text-2xl font-heading font-bold text-gray-900 mb-2">
+                  <h2 className="text-2xl font-heading font-medium text-gray-900 mb-2">
                     Resources ({filteredResources.length})
                   </h2>
                   <p className="text-gray-600">
@@ -391,7 +391,7 @@ export default function ResourcesPageClient() {
                             {getResourceIcon(resource.type)}
                           </div>
                           <div>
-                            <span className="text-xs font-medium bg-gray-100 text-gray-600 px-2 py-1 rounded">
+                            <span className="text-xs font-normal bg-gray-100 text-gray-600 px-2 py-1 rounded">
                               {resource.type}
                             </span>
                           </div>
@@ -399,19 +399,19 @@ export default function ResourcesPageClient() {
                         
                         <div className="flex gap-2">
                           {resource.featured && (
-                            <span className="text-xs font-medium bg-primary text-white px-2 py-1 rounded">
+                            <span className="text-xs font-normal bg-primary text-white px-2 py-1 rounded">
                               Featured
                             </span>
                           )}
                           {resource.gated && (
-                            <span className="text-xs font-medium bg-accent text-white px-2 py-1 rounded">
+                            <span className="text-xs font-normal bg-accent text-white px-2 py-1 rounded">
                               Gated
                             </span>
                           )}
                         </div>
                       </div>
                       
-                      <h3 className="text-lg font-heading font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                      <h3 className="text-lg font-heading font-medium text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2">
                         {resource.title}
                       </h3>
                       
@@ -436,7 +436,7 @@ export default function ResourcesPageClient() {
                           )}
                         </div>
                         
-                        <div className="flex items-center text-primary font-medium text-sm group-hover:text-primary-dark transition-colors">
+                        <div className="flex items-center text-primary font-normal text-sm group-hover:text-primary-dark transition-colors">
                           <FiDownload className="h-4 w-4 mr-1" />
                           {resource.gated ? 'Get Access' : 'Download'}
                         </div>
@@ -449,7 +449,7 @@ export default function ResourcesPageClient() {
               {filteredResources.length === 0 && (
                 <div className="text-center py-16">
                   <div className="text-6xl mb-4">🔍</div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">No resources found</h3>
+                  <h3 className="text-xl font-medium text-gray-900 mb-2">No resources found</h3>
                   <p className="text-gray-600 mb-6">Try adjusting your search terms or filters</p>
                   <CTAButton
                     variant="primary"

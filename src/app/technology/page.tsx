@@ -98,7 +98,7 @@ const TechnologyPage: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl lg:text-6xl font-heading font-bold text-gray-900 mb-6"
+            className="text-4xl lg:text-6xl font-heading font-light text-gray-900 mb-6"
           >
             The Science of True Odor Neutralization
           </motion.h1>
@@ -124,7 +124,7 @@ const TechnologyPage: React.FC = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl lg:text-4xl font-heading font-light text-gray-900 mb-6">
                 The Problem with Masking
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
@@ -192,7 +192,7 @@ const TechnologyPage: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+              className="text-3xl lg:text-4xl font-heading font-light text-gray-900 mb-6"
             >
               The Ecolo Solution - Counteractant Technology
             </motion.h2>
@@ -215,12 +215,12 @@ const TechnologyPage: React.FC = () => {
             viewport={{ once: true }}
             className="bg-white rounded-2xl shadow-lg p-8 mb-12"
           >
-            <h3 className="text-2xl font-semibold text-center text-gray-900 mb-8">Molecular Transformation Process</h3>
+            <h3 className="text-2xl font-medium text-center text-gray-900 mb-8">Molecular Transformation Process</h3>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
               {/* Before */}
               <div className="text-center">
-                <h4 className="text-lg font-semibold text-red-600 mb-4">Before Treatment</h4>
+                <h4 className="text-lg font-medium text-red-600 mb-4">Before Treatment</h4>
                 <div className="space-y-3">
                   {targetMolecules.map((molecule, index) => (
                     <motion.div
@@ -247,13 +247,13 @@ const TechnologyPage: React.FC = () => {
                 >
                   <FiTool className="h-8 w-8 text-white" />
                 </motion.div>
-                <h4 className="text-lg font-semibold text-primary mb-2">Counteractant Binding</h4>
+                <h4 className="text-lg font-medium text-primary mb-2">Counteractant Binding</h4>
                 <p className="text-sm text-gray-600">Active ingredients chemically bind to odor molecules</p>
               </div>
 
               {/* After */}
               <div className="text-center">
-                <h4 className="text-lg font-semibold text-secondary mb-4">After Treatment</h4>
+                <h4 className="text-lg font-medium text-secondary mb-4">After Treatment</h4>
                 <motion.div
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
@@ -279,7 +279,7 @@ const TechnologyPage: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 text-center mb-16"
+            className="text-3xl lg:text-4xl font-heading font-light text-gray-900 text-center mb-16"
           >
             Technology Comparison
           </motion.h2>
@@ -294,13 +294,13 @@ const TechnologyPage: React.FC = () => {
             <table className="w-full bg-white rounded-xl shadow-lg overflow-hidden">
               <thead className="bg-gray-50">
                 <tr>
-                  <th className="px-6 py-4 text-left font-semibold text-gray-900">Method</th>
-                  <th className="px-6 py-4 text-left font-semibold text-gray-900">Effectiveness</th>
-                  <th className="px-6 py-4 text-left font-semibold text-gray-900">Initial Cost</th>
-                  <th className="px-6 py-4 text-left font-semibold text-gray-900">Operating Cost</th>
-                  <th className="px-6 py-4 text-left font-semibold text-gray-900">Environmental Impact</th>
-                  <th className="px-6 py-4 text-left font-semibold text-gray-900">Maintenance</th>
-                  <th className="px-6 py-4 text-left font-semibold text-gray-900">Coverage Area</th>
+                  <th className="px-6 py-4 text-left font-medium text-gray-900">Method</th>
+                  <th className="px-6 py-4 text-left font-medium text-gray-900">Effectiveness</th>
+                  <th className="px-6 py-4 text-left font-medium text-gray-900">Initial Cost</th>
+                  <th className="px-6 py-4 text-left font-medium text-gray-900">Operating Cost</th>
+                  <th className="px-6 py-4 text-left font-medium text-gray-900">Environmental Impact</th>
+                  <th className="px-6 py-4 text-left font-medium text-gray-900">Maintenance</th>
+                  <th className="px-6 py-4 text-left font-medium text-gray-900">Coverage Area</th>
                 </tr>
               </thead>
               <tbody>
@@ -317,12 +317,12 @@ const TechnologyPage: React.FC = () => {
                         : 'hover:bg-gray-50'
                     }`}
                   >
-                    <td className={`px-6 py-4 font-semibold ${
+                    <td className={`px-6 py-4 font-medium ${
                       row.isEcolo ? 'text-primary' : 'text-gray-900'
                     }`}>
                       {row.method}
                       {row.isEcolo && (
-                        <span className="ml-2 inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-primary text-white">
+                        <span className="ml-2 inline-flex items-center px-2 py-1 rounded-full text-xs font-normal bg-primary text-white">
                           Our Solution
                         </span>
                       )}
@@ -349,7 +349,7 @@ const TechnologyPage: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 text-center mb-16"
+            className="text-3xl lg:text-4xl font-heading font-light text-gray-900 text-center mb-16"
           >
             Our Three Core Technological Approaches
           </motion.h2>
@@ -369,8 +369,8 @@ const TechnologyPage: React.FC = () => {
                     {method.icon}
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900">{method.name}</h3>
-                    <p className="text-primary font-medium text-sm">{method.productLine}</p>
+                    <h3 className="text-xl font-medium text-gray-900">{method.name}</h3>
+                    <p className="text-primary font-normal text-sm">{method.productLine}</p>
                   </div>
                 </div>
                 
@@ -379,7 +379,7 @@ const TechnologyPage: React.FC = () => {
                 </p>
                 
                 <div className="border-t border-gray-100 pt-4">
-                  <p className="text-sm text-gray-500 font-medium">Best For:</p>
+                  <p className="text-sm text-gray-500 font-normal">Best For:</p>
                   <p className="text-sm text-gray-700">{method.bestFor}</p>
                 </div>
               </motion.div>
@@ -398,7 +398,7 @@ const TechnologyPage: React.FC = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl lg:text-4xl font-heading font-light text-gray-900 mb-6">
                 R&D & Quality
               </h2>
               <p className="text-gray-600 leading-relaxed mb-8">
@@ -431,19 +431,19 @@ const TechnologyPage: React.FC = () => {
               className="grid grid-cols-2 gap-4"
             >
               <div className="bg-gradient-to-br from-primary/10 to-primary/20 rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-primary mb-2">50</div>
+                <div className="text-3xl font-medium text-primary mb-2">50</div>
                 <div className="text-sm text-gray-700">Years of Innovation</div>
               </div>
               <div className="bg-gradient-to-br from-secondary/10 to-secondary/20 rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-secondary mb-2">100+</div>
+                <div className="text-3xl font-medium text-secondary mb-2">100+</div>
                 <div className="text-sm text-gray-700">Proprietary Formulations</div>
               </div>
               <div className="bg-gradient-to-br from-accent/10 to-accent/20 rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-accent mb-2">PhD</div>
+                <div className="text-3xl font-medium text-accent mb-2">PhD</div>
                 <div className="text-sm text-gray-700">Chemists In-House</div>
               </div>
               <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-gray-700 mb-2">ISO</div>
+                <div className="text-3xl font-medium text-gray-700 mb-2">ISO</div>
                 <div className="text-sm text-gray-700">Certified Facilities</div>
               </div>
             </motion.div>
@@ -460,7 +460,7 @@ const TechnologyPage: React.FC = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl lg:text-4xl font-heading font-bold text-white mb-6">
+            <h2 className="text-3xl lg:text-4xl font-heading font-light text-white mb-6">
               Need a Technical Data Sheet?
             </h2>
             <p className="text-xl text-blue-100 mb-8 leading-relaxed">
@@ -469,7 +469,7 @@ const TechnologyPage: React.FC = () => {
             </p>
             
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-              <h3 className="text-xl font-semibold text-white mb-6">Get Instant Access</h3>
+              <h3 className="text-xl font-medium text-white mb-6">Get Instant Access</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                 <input
                   type="text"

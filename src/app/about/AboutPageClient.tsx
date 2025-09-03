@@ -160,7 +160,7 @@ export default function AboutPageClient() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl lg:text-6xl font-heading font-bold text-white mb-6">
+            <h1 className="text-4xl lg:text-6xl font-heading font-light text-white mb-6">
               50 Years of <span className="text-accent">Innovation</span>
             </h1>
             <p className="text-xl lg:text-2xl text-blue-100 max-w-3xl mx-auto mb-8">
@@ -179,7 +179,7 @@ export default function AboutPageClient() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+              className="text-3xl lg:text-4xl font-heading font-light text-gray-900 mb-6"
             >
               Our Story
             </motion.h2>
@@ -211,8 +211,8 @@ export default function AboutPageClient() {
                   {/* Content */}
                   <div className={`lg:w-5/12 ${index % 2 === 0 ? 'lg:pr-12 lg:text-right' : 'lg:pl-12 lg:text-left'}`}>
                     <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
-                      <div className="text-2xl font-bold text-primary mb-2">{item.year}</div>
-                      <h3 className="text-xl font-heading font-bold text-gray-900 mb-2">{item.event}</h3>
+                      <div className="text-2xl font-medium text-primary mb-2">{item.year}</div>
+                      <h3 className="text-xl font-heading font-medium text-gray-900 mb-2">{item.event}</h3>
                       <p className="text-gray-600">{item.description}</p>
                     </div>
                   </div>
@@ -238,7 +238,7 @@ export default function AboutPageClient() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+              className="text-3xl lg:text-4xl font-heading font-light text-gray-900 mb-6"
             >
               Mission, Vision & Values
             </motion.h2>
@@ -257,7 +257,7 @@ export default function AboutPageClient() {
                 <div className="p-3 bg-primary rounded-lg text-white mr-4">
                   <FiTarget className="h-8 w-8" />
                 </div>
-                <h3 className="text-2xl font-heading font-bold text-gray-900">Our Mission</h3>
+                <h3 className="text-2xl font-heading font-light text-gray-900">Our Mission</h3>
               </div>
               <p className="text-gray-600 leading-relaxed text-lg">
                 To provide innovative, environmentally responsible odor control solutions that improve quality of life and protect our planet.
@@ -276,7 +276,7 @@ export default function AboutPageClient() {
                 <div className="p-3 bg-secondary rounded-lg text-white mr-4">
                   <FiGlobe className="h-8 w-8" />
                 </div>
-                <h3 className="text-2xl font-heading font-bold text-gray-900">Our Vision</h3>
+                <h3 className="text-2xl font-heading font-light text-gray-900">Our Vision</h3>
               </div>
               <p className="text-gray-600 leading-relaxed text-lg">
                 A world where communities and industries coexist harmoniously without odor concerns.
@@ -293,7 +293,7 @@ export default function AboutPageClient() {
             className="bg-white rounded-xl p-8 shadow-lg"
           >
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-heading font-bold text-gray-900 mb-4">Our Values</h3>
+              <h3 className="text-2xl font-heading font-light text-gray-900 mb-4">Our Values</h3>
               <p className="text-gray-600">The principles that guide everything we do</p>
             </div>
             
@@ -310,7 +310,7 @@ export default function AboutPageClient() {
                   <div className={`inline-flex items-center justify-center w-16 h-16 rounded-xl ${value.color} text-white mb-4 group-hover:scale-110 transition-transform duration-300`}>
                     {value.icon}
                   </div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-2">{value.title}</h4>
+                  <h4 className="text-lg font-medium text-gray-900 mb-2">{value.title}</h4>
                   <p className="text-gray-600 text-sm">{value.description}</p>
                 </motion.div>
               ))}
@@ -328,7 +328,7 @@ export default function AboutPageClient() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+              className="text-3xl lg:text-4xl font-heading font-light text-gray-900 mb-6"
             >
               Global Presence
             </motion.h2>
@@ -362,9 +362,9 @@ export default function AboutPageClient() {
                     <FiMapPin className="h-6 w-6" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-heading font-bold text-gray-900">{office.location}</h3>
+                    <h3 className="text-lg font-heading font-medium text-gray-900">{office.location}</h3>
                     {office.isHQ && (
-                      <span className="text-xs bg-primary text-white px-2 py-1 rounded-full">Headquarters</span>
+                      <span className="text-xs bg-primary text-white px-2 py-1 rounded-full font-normal">Headquarters</span>
                     )}
                   </div>
                 </div>
@@ -404,7 +404,7 @@ export default function AboutPageClient() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+              className="text-3xl lg:text-4xl font-heading font-light text-gray-900 mb-6"
             >
               Leadership Team
             </motion.h2>
@@ -435,8 +435,8 @@ export default function AboutPageClient() {
                     alt={member.name}
                     className="w-24 h-24 rounded-full object-cover mx-auto mb-4 group-hover:scale-105 transition-transform duration-300"
                   />
-                  <h3 className="text-xl font-heading font-bold text-gray-900 mb-1">{member.name}</h3>
-                  <p className="text-primary font-medium mb-3">{member.title}</p>
+                  <h3 className="text-xl font-heading font-medium text-gray-900 mb-1">{member.name}</h3>
+                  <p className="text-primary font-normal mb-3">{member.title}</p>
                   <p className="text-gray-600 leading-relaxed text-sm">{member.bio}</p>
                 </div>
               </motion.div>
@@ -454,7 +454,7 @@ export default function AboutPageClient() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-6"
+              className="text-3xl lg:text-4xl font-heading font-light text-gray-900 mb-6"
             >
               Certifications & Quality
             </motion.h2>
@@ -480,7 +480,7 @@ export default function AboutPageClient() {
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center group"
               >
                 <div className="text-4xl mb-4">{cert.icon}</div>
-                <h3 className="text-lg font-heading font-bold text-gray-900 mb-2">{cert.name}</h3>
+                <h3 className="text-lg font-heading font-medium text-gray-900 mb-2">{cert.name}</h3>
                 <p className="text-gray-600">{cert.description}</p>
               </motion.div>
             ))}
@@ -496,7 +496,7 @@ export default function AboutPageClient() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-3xl lg:text-4xl font-heading font-bold text-white mb-6"
+            className="text-3xl lg:text-4xl font-heading font-light text-white mb-6"
           >
             Awards & Recognition
           </motion.h2>
@@ -521,7 +521,7 @@ export default function AboutPageClient() {
                 className="bg-white/10 backdrop-blur-md rounded-xl p-8 text-white hover:bg-white/20 transition-all duration-300"
               >
                 <FiAward className="h-12 w-12 mx-auto mb-4 text-accent" />
-                <h3 className="text-lg font-heading font-bold mb-2">{award}</h3>
+                <h3 className="text-lg font-heading font-medium mb-2">{award}</h3>
               </motion.div>
             ))}
           </div>

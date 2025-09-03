@@ -115,7 +115,7 @@ export default function EquipmentPage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-4xl md:text-6xl font-heading font-bold text-gray-900 mb-6"
+              className="text-4xl md:text-6xl font-heading font-light text-gray-900 mb-6"
             >
               Advanced Delivery
               <span className="text-primary block">Equipment Systems</span>
@@ -137,15 +137,15 @@ export default function EquipmentPage() {
             >
               <div className="flex items-center bg-white px-6 py-3 rounded-full shadow-md">
                 <FiSettings className="h-5 w-5 text-primary mr-2" />
-                <span className="font-medium text-gray-700">Automated Operation</span>
+                <span className="font-normal text-gray-700">Automated Operation</span>
               </div>
               <div className="flex items-center bg-white px-6 py-3 rounded-full shadow-md">
                 <FiTrendingUp className="h-5 w-5 text-green-600 mr-2" />
-                <span className="font-medium text-gray-700">Maximum Efficiency</span>
+                <span className="font-normal text-gray-700">Maximum Efficiency</span>
               </div>
               <div className="flex items-center bg-white px-6 py-3 rounded-full shadow-md">
                 <FiShield className="h-5 w-5 text-blue-600 mr-2" />
-                <span className="font-medium text-gray-700">Industrial Grade</span>
+                <span className="font-normal text-gray-700">Industrial Grade</span>
               </div>
             </motion.div>
           </div>
@@ -169,21 +169,21 @@ export default function EquipmentPage() {
                     <div className="flex items-center mb-6">
                       <div className="text-5xl mr-4">{system.icon}</div>
                       <div className="flex-1">
-                        <h3 className="text-2xl font-heading font-bold text-gray-900 group-hover:text-primary transition-colors mb-1">
+                        <h3 className="text-2xl font-heading font-medium text-gray-900 group-hover:text-primary transition-colors mb-1">
                           {system.name}
                         </h3>
-                        <p className="text-primary font-semibold text-sm mb-2">{system.fullName}</p>
+                        <p className="text-primary font-medium text-sm mb-2">{system.fullName}</p>
                         <p className="text-gray-600 text-sm">{system.description}</p>
                       </div>
                     </div>
 
                     {/* Key Specs */}
                     <div className="bg-gray-50 rounded-lg p-4 mb-6">
-                      <div className="text-sm font-semibold text-gray-700 mb-3">Key Specifications</div>
+                      <div className="text-sm font-medium text-gray-700 mb-3">Key Specifications</div>
                       <div className="grid grid-cols-2 gap-3">
                         {Object.entries(system.specs).map(([key, value]) => (
                           <div key={key} className="text-center">
-                            <div className="text-lg font-bold text-primary">{value}</div>
+                            <div className="text-lg font-medium text-primary">{value}</div>
                             <div className="text-xs text-gray-500 capitalize">{key.replace(/([A-Z])/g, ' $1')}</div>
                           </div>
                         ))}
@@ -192,7 +192,7 @@ export default function EquipmentPage() {
 
                     {/* Features */}
                     <div className="mb-6">
-                      <div className="text-sm font-semibold text-gray-700 mb-3">Key Features</div>
+                      <div className="text-sm font-medium text-gray-700 mb-3">Key Features</div>
                       <div className="grid grid-cols-2 gap-2">
                         {system.features.slice(0, 4).map((feature, idx) => (
                           <div key={idx} className="flex items-center text-xs">
@@ -205,16 +205,16 @@ export default function EquipmentPage() {
 
                     {/* Ideal For */}
                     <div className="bg-blue-50 rounded-lg p-4 mb-6">
-                      <div className="text-sm font-semibold text-blue-800 mb-1">Ideal Applications</div>
+                      <div className="text-sm font-medium text-blue-800 mb-1">Ideal Applications</div>
                       <div className="text-blue-700 text-sm">{system.idealFor}</div>
                     </div>
 
                     {/* Compatible Chemistry */}
                     <div className="mb-6">
-                      <div className="text-sm font-semibold text-gray-700 mb-2">Compatible Chemistry:</div>
+                      <div className="text-sm font-medium text-gray-700 mb-2">Compatible Chemistry:</div>
                       <div className="flex flex-wrap gap-2">
                         {system.compatibleChemistry.map((chem, idx) => (
-                          <span key={idx} className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs font-medium">
+                          <span key={idx} className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs font-normal">
                             {chem}
                           </span>
                         ))}
@@ -223,7 +223,7 @@ export default function EquipmentPage() {
 
                     {/* Footer */}
                     <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                      <div className="flex items-center text-primary font-medium group-hover:text-primary-dark transition-colors">
+                      <div className="flex items-center text-primary font-normal group-hover:text-primary-dark transition-colors">
                         <span className="text-sm mr-2">View Specifications</span>
                         <FiArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                       </div>
@@ -247,7 +247,7 @@ export default function EquipmentPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-heading font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-heading font-light text-gray-900 mb-4">
               Equipment by Application Type
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -265,11 +265,11 @@ export default function EquipmentPage() {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl">🏭</span>
               </div>
-              <h3 className="text-xl font-heading font-bold text-gray-900 mb-4">Large Scale Systems</h3>
+              <h3 className="text-xl font-heading font-medium text-gray-900 mb-4">Large Scale Systems</h3>
               <p className="text-gray-600 mb-6">For landfills, wastewater plants, and industrial facilities requiring extensive coverage</p>
               <div className="space-y-2">
-                <div className="text-primary font-medium">• AMC-5000 Misting Controller</div>
-                <div className="text-primary font-medium">• ACU.53 High-Volume Unit</div>
+                <div className="text-primary font-normal">• AMC-5000 Misting Controller</div>
+                <div className="text-primary font-normal">• ACU.53 High-Volume Unit</div>
               </div>
             </motion.div>
 
@@ -282,11 +282,11 @@ export default function EquipmentPage() {
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl">🏢</span>
               </div>
-              <h3 className="text-xl font-heading font-bold text-gray-900 mb-4">Commercial Systems</h3>
+              <h3 className="text-xl font-heading font-medium text-gray-900 mb-4">Commercial Systems</h3>
               <p className="text-gray-600 mb-6">Perfect for commercial buildings, hotels, and mid-size facilities</p>
               <div className="space-y-2">
-                <div className="text-green-600 font-medium">• ACU.15 Compact Unit</div>
-                <div className="text-green-600 font-medium">• AirPro Big Dispenser</div>
+                <div className="text-green-600 font-normal">• ACU.15 Compact Unit</div>
+                <div className="text-green-600 font-normal">• AirPro Big Dispenser</div>
               </div>
             </motion.div>
 
@@ -299,11 +299,11 @@ export default function EquipmentPage() {
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl">🏠</span>
               </div>
-              <h3 className="text-xl font-heading font-bold text-gray-900 mb-4">Specialized Systems</h3>
+              <h3 className="text-xl font-heading font-medium text-gray-900 mb-4">Specialized Systems</h3>
               <p className="text-gray-600 mb-6">Targeted solutions for specific applications and environments</p>
               <div className="space-y-2">
-                <div className="text-blue-600 font-medium">• AirPro Mini Smart Dispenser</div>
-                <div className="text-blue-600 font-medium">• HydroFoamer Application System</div>
+                <div className="text-blue-600 font-normal">• AirPro Mini Smart Dispenser</div>
+                <div className="text-blue-600 font-normal">• HydroFoamer Application System</div>
               </div>
             </motion.div>
           </div>
@@ -314,7 +314,7 @@ export default function EquipmentPage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-heading font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-heading font-light text-gray-900 mb-4">
               Why Choose Ecolo Equipment?
             </h2>
           </div>
@@ -329,7 +329,7 @@ export default function EquipmentPage() {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <FiSettings className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-lg font-heading font-bold text-gray-900 mb-3">Precision Engineering</h3>
+              <h3 className="text-lg font-heading font-medium text-gray-900 mb-3">Precision Engineering</h3>
               <p className="text-gray-600 text-sm">Designed specifically for optimal chemistry delivery and maximum odor control effectiveness</p>
             </motion.div>
 
@@ -342,7 +342,7 @@ export default function EquipmentPage() {
               <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <FiTrendingUp className="h-6 w-6 text-green-600" />
               </div>
-              <h3 className="text-lg font-heading font-bold text-gray-900 mb-3">Smart Automation</h3>
+              <h3 className="text-lg font-heading font-medium text-gray-900 mb-3">Smart Automation</h3>
               <p className="text-gray-600 text-sm">GPS-based controls, weather compensation, and remote monitoring for optimal performance</p>
             </motion.div>
 
@@ -355,7 +355,7 @@ export default function EquipmentPage() {
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <FiShield className="h-6 w-6 text-blue-600" />
               </div>
-              <h3 className="text-lg font-heading font-bold text-gray-900 mb-3">Industrial Durability</h3>
+              <h3 className="text-lg font-heading font-medium text-gray-900 mb-3">Industrial Durability</h3>
               <p className="text-gray-600 text-sm">Built to withstand harsh environments with stainless steel construction and weather resistance</p>
             </motion.div>
 
@@ -368,7 +368,7 @@ export default function EquipmentPage() {
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <FiZap className="h-6 w-6 text-purple-600" />
               </div>
-              <h3 className="text-lg font-heading font-bold text-gray-900 mb-3">Energy Efficient</h3>
+              <h3 className="text-lg font-heading font-medium text-gray-900 mb-3">Energy Efficient</h3>
               <p className="text-gray-600 text-sm">Low power consumption, battery options, and smart scheduling reduce operational costs</p>
             </motion.div>
           </div>
@@ -383,7 +383,7 @@ export default function EquipmentPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-heading font-bold mb-4">
+            <h2 className="text-3xl font-heading font-light mb-4">
               Need Help Selecting Equipment?
             </h2>
             <p className="text-xl text-gray-300 mb-8">
@@ -392,14 +392,14 @@ export default function EquipmentPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-dark transition-all hover:scale-105 inline-flex items-center justify-center"
+                className="bg-primary text-white px-8 py-4 rounded-lg font-medium hover:bg-primary-dark transition-all hover:scale-105 inline-flex items-center justify-center"
               >
                 <span>Get Equipment Consultation</span>
                 <FiArrowRight className="ml-2 h-5 w-5" />
               </Link>
               <Link
                 href="/products"
-                className="border border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-all inline-flex items-center justify-center"
+                className="border border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-gray-900 transition-all inline-flex items-center justify-center"
               >
                 View Compatible Chemistry
               </Link>

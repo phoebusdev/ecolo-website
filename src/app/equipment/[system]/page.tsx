@@ -169,7 +169,7 @@ export default function EquipmentSystemPage({ params }: PageProps) {
           >
             <div className="flex items-center justify-center mb-6">
               <div className="text-6xl mr-4">{data.icon}</div>
-              <h1 className="text-4xl md:text-6xl font-heading font-bold text-gray-900">
+              <h1 className="text-4xl md:text-6xl font-heading font-light text-gray-900">
                 {data.name}
               </h1>
             </div>
@@ -185,19 +185,19 @@ export default function EquipmentSystemPage({ params }: PageProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-heading font-bold text-gray-900 mb-8">Technical Specifications</h2>
+              <h2 className="text-3xl font-heading font-light text-gray-900 mb-8">Technical Specifications</h2>
               <div className="space-y-6">
                 {Object.entries(data.specs).map(([key, value]) => (
                   <div key={key} className="flex justify-between items-center py-4 border-b border-gray-200">
-                    <span className="text-gray-700 font-medium capitalize">{key.replace(/([A-Z])/g, ' $1')}</span>
-                    <span className="text-primary font-semibold">{value}</span>
+                    <span className="text-gray-700 font-normal capitalize">{key.replace(/([A-Z])/g, ' $1')}</span>
+                    <span className="text-primary font-medium">{value}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             <div>
-              <h3 className="text-2xl font-heading font-bold text-gray-900 mb-6">Key Features</h3>
+              <h3 className="text-2xl font-heading font-light text-gray-900 mb-6">Key Features</h3>
               <div className="space-y-4">
                 {data.features.map((feature: string, index: number) => (
                   <div key={index} className="flex items-center">
@@ -209,17 +209,17 @@ export default function EquipmentSystemPage({ params }: PageProps) {
 
               {data.idealFor && (
                 <div className="mt-8 p-6 bg-blue-50 rounded-xl">
-                  <h4 className="text-lg font-semibold text-blue-900 mb-2">Ideal Applications</h4>
+                  <h4 className="text-lg font-medium text-blue-900 mb-2">Ideal Applications</h4>
                   <p className="text-blue-800">{data.idealFor}</p>
                 </div>
               )}
 
               {data.compatibleChemistry && (
                 <div className="mt-6">
-                  <h4 className="text-lg font-semibold text-gray-900 mb-4">Compatible Chemistry</h4>
+                  <h4 className="text-lg font-medium text-gray-900 mb-4">Compatible Chemistry</h4>
                   <div className="flex flex-wrap gap-2">
                     {data.compatibleChemistry.map((chem: string, idx: number) => (
-                      <span key={idx} className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
+                      <span key={idx} className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-normal">
                         {chem}
                       </span>
                     ))}
@@ -234,7 +234,7 @@ export default function EquipmentSystemPage({ params }: PageProps) {
       {/* CTA */}
       <section className="py-16 bg-primary text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-heading font-bold mb-4">
+          <h2 className="text-3xl font-heading font-light mb-4">
             Ready to Install {data.name}?
           </h2>
           <p className="text-xl text-primary-light mb-8">
@@ -243,12 +243,12 @@ export default function EquipmentSystemPage({ params }: PageProps) {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all inline-flex items-center justify-center"
+              className="bg-white text-primary px-8 py-4 rounded-lg font-medium hover:bg-gray-100 transition-all inline-flex items-center justify-center"
             >
               <span>Get Installation Support</span>
               <FiArrowRight className="ml-2 h-5 w-5" />
             </Link>
-            <button className="border border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all inline-flex items-center justify-center">
+            <button className="border border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-primary transition-all inline-flex items-center justify-center">
               <FiDownload className="mr-2 h-5 w-5" />
               Download Spec Sheet
             </button>

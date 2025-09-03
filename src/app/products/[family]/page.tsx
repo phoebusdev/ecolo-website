@@ -350,10 +350,10 @@ export default function ProductFamilyPage({ params }: ProductFamilyPageProps) {
             >
               <div className="text-6xl mr-4">{family.header.icon}</div>
               <div className="text-left">
-                <h1 className="text-4xl md:text-6xl font-heading font-bold text-gray-900">
+                <h1 className="text-4xl md:text-6xl font-heading font-light text-gray-900">
                   {family.header.title}
                 </h1>
-                <p className="text-xl text-primary font-semibold">{family.header.subtitle}</p>
+                <p className="text-xl text-primary font-medium">{family.header.subtitle}</p>
               </div>
             </motion.div>
             <motion.p
@@ -373,7 +373,7 @@ export default function ProductFamilyPage({ params }: ProductFamilyPageProps) {
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-heading font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl font-heading font-light text-gray-900 mb-4">
                 {family.how_it_works.title}
               </h2>
             </div>
@@ -386,7 +386,7 @@ export default function ProductFamilyPage({ params }: ProductFamilyPageProps) {
                   transition={{ duration: 0.6, delay: index * 0.2 }}
                   className="text-center"
                 >
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-lg">
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-medium text-lg">
                     {index + 1}
                   </div>
                   <p className="text-gray-700">{step}</p>
@@ -402,7 +402,7 @@ export default function ProductFamilyPage({ params }: ProductFamilyPageProps) {
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white rounded-xl shadow-lg p-8">
-              <h3 className="text-2xl font-heading font-bold text-gray-900 mb-6">Key Benefits</h3>
+              <h3 className="text-2xl font-heading font-light text-gray-900 mb-6">Key Benefits</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {family.key_benefits.map((benefit: string, index: number) => (
                   <motion.div
@@ -448,7 +448,7 @@ export default function ProductFamilyPage({ params }: ProductFamilyPageProps) {
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-heading font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl font-heading font-light text-gray-900 mb-4">
                 Recommended Delivery Systems
               </h2>
               <p className="text-xl text-gray-600">
@@ -467,13 +467,13 @@ export default function ProductFamilyPage({ params }: ProductFamilyPageProps) {
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <FiTruck className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="text-lg font-heading font-bold text-gray-900 mb-2">
+                  <h3 className="text-lg font-heading font-medium text-gray-900 mb-2">
                     {system.name}
                   </h3>
                   <p className="text-gray-600 mb-4">{system.description}</p>
                   <Link
                     href={`/equipment/${system.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
-                    className="text-primary hover:text-primary-dark font-medium inline-flex items-center"
+                    className="text-primary hover:text-primary-dark font-normal inline-flex items-center"
                   >
                     View Specifications
                     <FiArrowRight className="ml-2 h-4 w-4" />
@@ -490,7 +490,7 @@ export default function ProductFamilyPage({ params }: ProductFamilyPageProps) {
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-gray-900 rounded-xl text-white p-8">
-              <h3 className="text-2xl font-heading font-bold mb-6">Ideal Applications</h3>
+              <h3 className="text-2xl font-heading font-light mb-6">Ideal Applications</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {Array.isArray(family.applications) 
                   ? family.applications.map((application: string, index: number) => (
@@ -534,7 +534,7 @@ export default function ProductFamilyPage({ params }: ProductFamilyPageProps) {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-heading font-bold mb-4">
+            <h2 className="text-3xl font-heading font-light mb-4">
               Ready to Implement {family.header.title}?
             </h2>
             <p className="text-xl text-primary-light mb-8">
@@ -543,14 +543,14 @@ export default function ProductFamilyPage({ params }: ProductFamilyPageProps) {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all hover:scale-105 inline-flex items-center justify-center"
+                className="bg-white text-primary px-8 py-4 rounded-lg font-medium hover:bg-gray-100 transition-all hover:scale-105 inline-flex items-center justify-center"
               >
                 <span>Get Technical Support</span>
                 <FiArrowRight className="ml-2 h-5 w-5" />
               </Link>
               <Link
                 href="/case-studies"
-                className="border border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all inline-flex items-center justify-center"
+                className="border border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-primary transition-all inline-flex items-center justify-center"
               >
                 View Case Studies
               </Link>

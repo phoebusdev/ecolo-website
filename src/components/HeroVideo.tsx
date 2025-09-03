@@ -2,7 +2,6 @@
 
 import React, { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FiChevronDown } from 'react-icons/fi';
 import CTAButton from './CTAButton';
 
 interface HeroVideoProps {
@@ -18,7 +17,7 @@ interface HeroVideoProps {
 const HeroVideo: React.FC<HeroVideoProps> = ({
   headline = "Advanced Odor Neutralization. Not Masking.",
   subheadline = "Global leader in science-driven odor control solutions for over 50 years",
-  videoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+  videoUrl = "/hero-vid.mp4",
   showCTA = true,
   ctaText = "Explore Solutions",
   ctaLink = "#solutions",
@@ -32,14 +31,6 @@ const HeroVideo: React.FC<HeroVideoProps> = ({
     }
   }, []);
 
-  const scrollToContent = () => {
-    const nextSection = document.getElementById('content');
-    if (nextSection) {
-      nextSection.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
-    }
-  };
 
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -65,16 +56,16 @@ const HeroVideo: React.FC<HeroVideoProps> = ({
         </video>
       </div>
 
-      {/* Dark Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-dark"></div>
+      {/* Lighter Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/40"></div>
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto pt-20">
+      <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto pt-32">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl sm:text-6xl lg:text-7xl font-heading font-bold mb-8 leading-tight"
+          className="text-5xl sm:text-6xl lg:text-7xl font-heading font-light mb-8 leading-tight"
         >
           {headline}
         </motion.h1>
@@ -83,7 +74,7 @@ const HeroVideo: React.FC<HeroVideoProps> = ({
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-2xl sm:text-3xl font-light mb-12 text-gray-200 max-w-4xl mx-auto leading-relaxed"
+          className="text-xl sm:text-2xl font-light mb-10 text-gray-100 max-w-3xl mx-auto leading-relaxed"
         >
           {subheadline}
         </motion.p>
@@ -93,13 +84,12 @@ const HeroVideo: React.FC<HeroVideoProps> = ({
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <CTAButton
               variant="primary"
               size="large"
               href={ctaLink}
-              className="animate-pulse-subtle"
             >
               {ctaText}
             </CTAButton>
@@ -119,52 +109,32 @@ const HeroVideo: React.FC<HeroVideoProps> = ({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-16 pt-10 border-t border-white/20"
+          className="mt-12 pt-8 border-t border-white/10"
         >
-          <p className="text-base text-gray-300 mb-6">Trusted by facilities worldwide</p>
-          <div className="flex flex-wrap justify-center items-center gap-10 opacity-70">
-            <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center">
-                <span className="text-white text-sm font-bold">50+</span>
+          <p className="text-sm text-gray-200 mb-4">Trusted by facilities worldwide</p>
+          <div className="flex flex-wrap justify-center items-center gap-8 opacity-80">
+            <div className="flex items-center space-x-2">
+              <div className="w-7 h-7 bg-white/20 backdrop-blur rounded flex items-center justify-center">
+                <span className="text-white text-xs font-medium">50+</span>
               </div>
-              <span className="text-base font-medium">Countries</span>
+              <span className="text-sm">Countries</span>
             </div>
-            <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center">
-                <span className="text-white text-xs font-bold">ISO</span>
+            <div className="flex items-center space-x-2">
+              <div className="w-7 h-7 bg-white/20 backdrop-blur rounded flex items-center justify-center">
+                <span className="text-white text-xs font-medium">ISO</span>
               </div>
-              <span className="text-base font-medium">Certified</span>
+              <span className="text-sm">Certified</span>
             </div>
-            <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center">
-                <span className="text-white text-xs font-bold">24/7</span>
+            <div className="flex items-center space-x-2">
+              <div className="w-7 h-7 bg-white/20 backdrop-blur rounded flex items-center justify-center">
+                <span className="text-white text-xs font-medium">24/7</span>
               </div>
-              <span className="text-base font-medium">Support</span>
+              <span className="text-sm">Support</span>
             </div>
           </div>
         </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
-      {showScrollIndicator && (
-        <motion.button
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1.0 }}
-          onClick={scrollToContent}
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white hover:text-primary transition-colors"
-          aria-label="Scroll to content"
-        >
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="flex flex-col items-center"
-          >
-            <span className="text-base font-medium mb-3">Scroll to explore</span>
-            <FiChevronDown className="h-7 w-7" />
-          </motion.div>
-        </motion.button>
-      )}
 
       {/* Video Controls Overlay (for accessibility) */}
       <div className="absolute top-4 right-4 z-20">
